@@ -57,6 +57,7 @@ const Home = () => {
               <Card.Title>
               <p>
               <PIcon><GlobeIcon className="mr-2" /></PIcon>
+              <PIcon><GlobeIcon className="mr-2" /></PIcon>
               </p>
                 Marketing Digital
               </Card.Title>
