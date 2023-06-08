@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // pages
 import Home from '../pages/Home';
 import CriacaoDeSites from "../pages/Criacao_de_sites";
+import Contato from '../pages/Contato'
+import QuemSomos from "../pages/QuemSomos"
 
 
 // Navbar e Footer
@@ -17,8 +19,9 @@ const Router = () => {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} /> 
-          <Route exact path="/criacao-de-sites" element={<CriacaoDeSites />} />                
-
+          <Route exact path="/criacao-de-sites" element={<CriacaoDeSites />} />   
+          <Route exact path="/contato" element={<Contato />} />   
+          <Route exact path="/quem-somos" element={<QuemSomos />} />   
         </Routes>
         <Footer />
       </BrowserRouter>

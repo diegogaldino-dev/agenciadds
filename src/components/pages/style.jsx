@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 import { FaCode, FaMobileAlt, FaPalette } from 'react-icons/fa';
+import Imagetec from '../../img/conceito-de.jpg'
+
+import contatoRedes from '../../img/2456059.jpg'
 
 export const LogoImage = styled.img`
   /* Estilos da imagem do logo */
@@ -45,6 +48,21 @@ export const Image = styled.img`
   object-fit: cover;
 `;
 
+export const ImageCont = styled.img`  
+  object-fit: cover;
+  background-position: center top -8px;
+  width: 100%; 
+  height: 600px;  
+`;
+
+export const ImageQuemSomos = styled.img`
+  object-fit: cover;
+  background-position: center top -8px;
+  width: 100%; 
+  height: 600px; 
+  
+`
+
 export const Title = styled.h2`
   font-size: 60px;
   margin-bottom: 10px; 
@@ -69,3 +87,71 @@ export const Text = styled.p`
   
 `;
 
+export const TextBGColor = styled.div`
+  color: #535a61;
+  background-image: url("${Imagetec}");  
+  background-size: cover;
+  background-position: center top -8px;
+`;
+
+export const TextImportancia = styled.div`  
+`
+
+export const TextBackground = styled.h2`
+ justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  border-radius: 8px 8px 8px 0px;
+  backdrop-filter: blur(10px);
+`
+
+export const ParagrafoDoTextBackground = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  border-radius: 8px 8px 8px 0px;
+  backdrop-filter: blur(10px);
+`
+export const DivTextCreater = styled.div`
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  
+`
+export const TextContatoInfo = styled.div`
+  background-image: url("${contatoRedes}");
+  background-size: cover;
+  background-position: center top -8px;
+  color: white;
+`
+
+
+export const LinkWithoutUnderline = styled.a`
+  text-decoration: none;  
+  background-color: rgb(135, 23, 157);
+  padding: 5px 10px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+`
+
+export const ParagrafoDoTextcolorContato = styled.p`
+  margin-top: 50px;
+  font-size: 22px;
+  
+`
+
+export const TitleContato = styled.h2`
+  background-color: #166AF2;
+  color: #fff;  
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  
+    
+`
