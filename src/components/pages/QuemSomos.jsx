@@ -1,12 +1,15 @@
 import React from "react";
 import QuemsomosImg from "../../img/5164968.jpg";
-import { ImageQuemSomos, Title, ContainerCards, CardQuemSomos } from "./style";
 import {
-  FaInstagram,
-  FaFacebookSquare,
-  FaWhatsapp,
-  FaEnvelope,
-} from "react-icons/fa";
+  ImageQuemSomos,
+  Title,
+  ContainerCards,
+  CardQuemSomos,
+  SocialContainer,
+  SocialLink,
+  SocialIcon,
+} from "./style";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const QuemSomos = () => {
   return (
@@ -57,24 +60,33 @@ const QuemSomos = () => {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <div className="social">
-                <a href="#">
-                  <FaInstagram />
-                  <i className="bi bi-twitter"></i>
-                </a>
-                <a href="#">
-                  <FaInstagram />
-                  <i className="bi bi-facebook"></i>
-                </a>
-                <a href="#">
-                  <FaInstagram />
-                  <i className="bi bi-instagram"></i>
-                </a>
-                <a href="#">
-                  <FaInstagram />
-                  <i className="bi bi-linkedin"></i>
-                </a>
-              </div>
+              <SocialContainer>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaInstagram />
+                  </SocialIcon>
+                </SocialLink>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaFacebook />
+                  </SocialIcon>
+                </SocialLink>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaLinkedin />
+                  </SocialIcon>
+                </SocialLink>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaWhatsapp />
+                  </SocialIcon>
+                </SocialLink>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaEnvelope />
+                  </SocialIcon>
+                </SocialLink>
+              </SocialContainer>
             </div>
           </CardQuemSomos>
 
@@ -92,24 +104,33 @@ const QuemSomos = () => {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <div className="social">
-                <a href="#">
-                  <FaInstagram />
-                  <i className="bi bi-twitter"></i>
-                </a>
-                <a href="#">
-                  <FaInstagram />
-                  <i className="bi bi-facebook"></i>
-                </a>
-                <a href="#">
-                  <FaInstagram />
-                  <i className="bi bi-instagram"></i>
-                </a>
-                <a href="#">
-                  <FaInstagram />
-                  <i className="bi bi-linkedin"></i>
-                </a>
-              </div>
+              <SocialContainer>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaInstagram />
+                  </SocialIcon>
+                </SocialLink>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaFacebook />
+                  </SocialIcon>
+                </SocialLink>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaLinkedin />
+                  </SocialIcon>
+                </SocialLink>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaWhatsapp />
+                  </SocialIcon>
+                </SocialLink>
+                <SocialLink href="#">
+                  <SocialIcon>
+                    <FaEnvelope />
+                  </SocialIcon>
+                </SocialLink>
+              </SocialContainer>
             </div>
           </CardQuemSomos>
         </ContainerCards>

@@ -164,3 +164,28 @@ export const CardQuemSomos = styled.div`
   width: 300px;
   margin-right: 30px;
 `
+
+export const SocialContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+`;
+
+export const SocialLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: violet;
+  color: white;
+  margin-right: 10px;
+`;
+
+export const SocialIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+`;
