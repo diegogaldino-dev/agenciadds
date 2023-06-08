@@ -151,7 +151,16 @@ export const TitleContato = styled.h2`
   color: #fff;  
   padding: 5px 10px;
   border-radius: 8px;
-  display: inline-block;
-  
-    
+  display: inline-block;    
+`
+
+export const ContainerCards = styled.div`
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+`
+
+export const CardQuemSomos = styled.div`
+  width: 300px;
+  margin-right: 30px;
 `
