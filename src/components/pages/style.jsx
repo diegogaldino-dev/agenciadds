@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { FaCode, FaMobileAlt, FaPalette } from 'react-icons/fa';
 import Imagetec from '../../img/conceito-de.jpg'
+import backimage from '../../img/19198948.jpg'
+
 
 import contatoRedes from '../../img/2456059.jpg'
 
@@ -90,6 +92,13 @@ export const Text = styled.p`
 export const TextBGColor = styled.div`
   color: #535a61;
   background-image: url("${Imagetec}");  
+  background-size: cover;
+  background-position: center top -8px;
+`;
+
+export const BackImagemMidia = styled.div`
+  color: #535a61;
+  background-image: url("${backimage}");  
   background-size: cover;
   background-position: center top -8px;
 `;
