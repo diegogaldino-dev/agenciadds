@@ -7,14 +7,14 @@ import { FiCheckCircle } from 'react-icons/fi';
 
 import midiaDigital from "../../img/3107569.jpg";
 
-const Midia_digital = () => {
+const Social_Media = () => {
   return (
     <>
       <div className="position-relative">
         <Image
           className="img-fluid"
           src={midiaDigital}
-          alt="Imagem midia Digital"
+          alt="Imagem Social Midia"
         />
         <div className="position-absolute top-0 start-0">
           <container>
@@ -22,15 +22,15 @@ const Midia_digital = () => {
               className="d-flex flex-column align-items-start"
               style={{ marginLeft: "120px" }}
             >
-              <Title>Midia Digital</Title>
+              <Title>Social Midia</Title>
               <Text className="text-left custom-text">
                 Pensando em potencializar sua presença online e alcançar um
-                público maior? Conte com os serviços de mídia digital da DDS
+                público maior? Conte com os serviços de social midia da DDS
                 Agência de Desenvolvimento. Nossa equipe especializada oferece
                 soluções personalizadas para impulsionar sua marca e alcançar
                 seus objetivos digitais. Desde estratégias de marketing digital
                 até gerenciamento de redes sociais, estamos prontos para ajudar.
-                Aproveite as vantagens da mídia digital e destaque-se no
+                Aproveite as vantagens da social midia e destaque-se no
                 mercado. Entre em contato conosco e descubra como podemos
                 impulsionar sua presença online.
               </Text>
@@ -41,12 +41,12 @@ const Midia_digital = () => {
 
       <TextImportancia>
         <div className="container pb-5 pt-5 text-center">
-          <h3 style={{ color: "#87179D" }}>Vantagens da Midia Digital</h3>
+          <h3 style={{ color: "#87179D" }}>Vantagens da Social Midia</h3>
           <p>
             Destaque sua marca, alcance seu público-alvo e impulsione suas
-            vendas com a mídia digital. Aumente sua visibilidade, mensure seus
+            vendas com a social midia. Aumente sua visibilidade, mensure seus
             resultados e conquiste resultados rápidos. Invista na DDS Agência de
-            Desenvolvimento e aproveite todas as vantagens da mídia digital para
+            Desenvolvimento e aproveite todas as vantagens da social midia para
             o crescimento do seu negócio.
           </p>
         </div>
@@ -105,4 +105,4 @@ const Midia_digital = () => {
   );
 };
 
-export default Midia_digital;
+export default Social_Media;

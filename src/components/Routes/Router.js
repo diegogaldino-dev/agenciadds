@@ -6,7 +6,7 @@ import Home from '../pages/Home';
 import CriacaoDeSites from "../pages/Criacao_de_sites";
 import Contato from '../pages/Contato'
 import QuemSomos from "../pages/QuemSomos"
-import MidiaDigital from '../pages/Midia_digital'
+import SocialMedia from '../pages/SocialMedia'
 import WhatsAppButton from '../pages/WhatsAppButton'
 
 // Navbar e Footer
@@ -23,7 +23,7 @@ const Router = () => {
           <Route exact path="/criacao-de-sites" element={<CriacaoDeSites />} />   
           <Route exact path="/contato" element={<Contato />} />   
           <Route exact path="/quem-somos" element={<QuemSomos />} />  
-          <Route exact path="/midia-digital" element={<MidiaDigital />} />   
+          <Route exact path="/social-midia" element={<SocialMedia />} />   
         </Routes>
         <WhatsAppButton />
         <Footer />
