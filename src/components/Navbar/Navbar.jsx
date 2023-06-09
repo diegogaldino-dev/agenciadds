@@ -27,7 +27,7 @@ const NavBar = () => {
           <Nav.Link as={Link} to="/contato">Contato</Nav.Link>
           <NavDropdown title="Tipos de Serviços" id="basic-nav-dropdown">
             <NavDropdown.Item as={Link} alt="Criação de Sites" to="/criacao-de-sites">Criação de Sites</NavDropdown.Item>
-            <NavDropdown.Item href="#marketingdigital">Marketing Digital</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/marketing-digital">Marketing Digital</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/social-midia">Social Midia</NavDropdown.Item>
           </NavDropdown>
         </Nav>

@@ -20,7 +20,7 @@ const WhatsAppButton = () => {
   return (
     <div
       className="fixed-bottom d-flex justify-content-end mb-4"
-      style={{ zIndex: 999, marginRight: "20px" }}
+      style={{ zIndex: 999, marginRight: "20px", cursor:"pointer"}}
     >
       <span onClick={handleWhatsAppClick}>
         <FaWhatsapp color="green" style={{fontSize:"70px"}}/>

@@ -7,6 +7,7 @@ import CriacaoDeSites from "../pages/Criacao_de_sites";
 import Contato from '../pages/Contato'
 import QuemSomos from "../pages/QuemSomos"
 import SocialMedia from '../pages/SocialMedia'
+import MarketingDigital from '../pages/MarketingDigital'
 import WhatsAppButton from '../pages/WhatsAppButton'
 
 // Navbar e Footer
@@ -23,7 +24,8 @@ const Router = () => {
           <Route exact path="/criacao-de-sites" element={<CriacaoDeSites />} />   
           <Route exact path="/contato" element={<Contato />} />   
           <Route exact path="/quem-somos" element={<QuemSomos />} />  
-          <Route exact path="/social-midia" element={<SocialMedia />} />   
+          <Route exact path="/social-midia" element={<SocialMedia />} /> 
+          <Route exact path="/marketing-digital" element={<MarketingDigital />} />   
         </Routes>
         <WhatsAppButton />
         <Footer />

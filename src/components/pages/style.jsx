@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Button, Collapse,} from 'react-bootstrap';
 import { FaCode, FaMobileAlt, FaPalette } from 'react-icons/fa';
 import Imagetec from '../../img/conceito-de.jpg'
 import backimage from '../../img/19198948.jpg'
@@ -197,4 +198,19 @@ export const SocialIcon = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 20px;
+`;
+
+export const StyledButton = styled(Button)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+`;
+
+export const StyledCollapse = styled(Collapse)`
+  & #first-collapse {
+    .card-body {
+      padding: 0.75rem;
+    }
+  }
 `;
