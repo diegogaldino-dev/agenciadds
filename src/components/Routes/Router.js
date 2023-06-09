@@ -7,7 +7,7 @@ import CriacaoDeSites from "../pages/Criacao_de_sites";
 import Contato from '../pages/Contato'
 import QuemSomos from "../pages/QuemSomos"
 import MidiaDigital from '../pages/Midia_digital'
-
+import WhatsAppButton from '../pages/WhatsAppButton'
 
 // Navbar e Footer
 import Navbar from "../Navbar/Navbar";
@@ -24,8 +24,8 @@ const Router = () => {
           <Route exact path="/contato" element={<Contato />} />   
           <Route exact path="/quem-somos" element={<QuemSomos />} />  
           <Route exact path="/midia-digital" element={<MidiaDigital />} />   
-
         </Routes>
+        <WhatsAppButton />
         <Footer />
       </BrowserRouter>
     </>
