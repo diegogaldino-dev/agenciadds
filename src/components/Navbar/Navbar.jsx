@@ -32,8 +32,8 @@ const NavBar = () => {
           </NavDropdown>
         </Nav>
         <NavRedes>
-          <Nav.Link href="#"><FaFacebook /></Nav.Link>
-          <Nav.Link href="#"><FaInstagram /></Nav.Link>
+          <Nav.Link href="https://www.facebook.com/profile.php?id=100093569524691&mibextid=ZbWKwL" target="_blank"><FaFacebook /></Nav.Link>
+          <Nav.Link href="https://www.instagram.com/dds_desenvolvimento/" target="_blank"><FaInstagram /></Nav.Link>
         </NavRedes>
       </Navbar.Collapse>
     </Navbar>
