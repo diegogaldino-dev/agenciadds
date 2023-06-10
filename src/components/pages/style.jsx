@@ -214,3 +214,10 @@ export const StyledCollapse = styled(Collapse)`
     }
   }
 `;
+
+export const CollapseOpen = styled.span`
+  margin-left: auto;
+  padding-top: 8px;
+  padding-right: 5px;
+  cursor: pointer;
+`

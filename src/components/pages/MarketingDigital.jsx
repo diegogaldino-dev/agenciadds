@@ -6,6 +6,7 @@ import {
   TextImportancia,
   StyledButton,
   StyledCollapse,
+  CollapseOpen,
 } from "./style";
 import { Card } from "react-bootstrap";
 
@@ -147,22 +148,24 @@ const MarketingDigital = () => {
         </h2>
         <div className="row">
           <div className="col">
-            <Card>
-              <Card.Title>
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleFirstCollapse}
+                aria-controls="first-collapse"
+                aria-expanded={isFirstCollapseOpen}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleFirstCollapse}
                   aria-controls="first-collapse"
                   aria-expanded={isFirstCollapseOpen}
-                  className="d-flex align-items-center text-uppercase pl-5"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
                   O que faz uma Agência de MKT Digital ?
-                  <div style={{}}>
-                  <span style={{ marginLeft: "auto" }}>
-                    {isFirstCollapseOpen ? "-" : "+"}
-                  </span>
-                  </div>
                 </StyledButton>
+                <CollapseOpen>{isFirstCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isFirstCollapseOpen}>
@@ -181,22 +184,28 @@ const MarketingDigital = () => {
               </StyledCollapse>
             </Card>
 
-            <Card>
-              <Card.Title>
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleSecondCollapse}
+                aria-controls="second-collapse"
+                aria-expanded={isSecondCollapseOpen}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleSecondCollapse}
                   aria-controls="second-collapse"
                   aria-expanded={isSecondCollapseOpen}
-                  className="d-flex align-items-center text-uppercase"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
-                  Fazem Lançamento de Info Produtos?
-                  <span>{isSecondCollapseOpen ? "-" : "+"}</span>
+                  FAZEM LANÇAMENTO DE INFO PRODUTOS?
                 </StyledButton>
+                <CollapseOpen>{isSecondCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isSecondCollapseOpen}>
-                <div id="second-collapse">
+                <div id="first-collapse">
                   <Card.Body>
                     SIM. Nossa agência possui toda a infraestrutura e
                     conhecimento necessários para lançamentos de info produtos.
@@ -208,18 +217,24 @@ const MarketingDigital = () => {
               </StyledCollapse>
             </Card>
 
-            <Card>
-              <Card.Title>
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleThirdCollapse}
+                aria-controls="third-collapse"
+                aria-expanded={isThirdCollapseOpen}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleThirdCollapse}
                   aria-controls="third-collapse"
                   aria-expanded={isThirdCollapseOpen}
-                  className="d-flex align-items-center text-uppercase"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
-                  O Que são Campanhas de Mídia Online ?
-                  <span>{isThirdCollapseOpen ? "-" : "+"}</span>
+                  O QUE SÃO CAMPANHAS DE MÍDIA ONLINE?
                 </StyledButton>
+                <CollapseOpen>{isThirdCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isThirdCollapseOpen}>
@@ -236,18 +251,24 @@ const MarketingDigital = () => {
               </StyledCollapse>
             </Card>
 
-            <Card>
-              <Card.Title>
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleFourthCollapse}
+                aria-controls="fourth-collapse"
+                aria-expanded={isFourthCollapseOpen}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleFourthCollapse}
                   aria-controls="fourth-collapse"
                   aria-expanded={isFourthCollapseOpen}
-                  className="d-flex align-items-center text-uppercase"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
-                  O que é automação de marketing Digital ?
-                  <span>{isFourthCollapseOpen ? "-" : "+"}</span>
+                  O QUE É AUTOMAÇÃO DE MARKETING DIGITAL?
                 </StyledButton>
+                <CollapseOpen>{isFourthCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isFourthCollapseOpen}>
@@ -263,18 +284,25 @@ const MarketingDigital = () => {
                 </div>
               </StyledCollapse>
             </Card>
-            <Card>
-              <Card.Title>
+
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleFifthCollapse}
+                aria-controls="fifth-collapse"
+                aria-expanded={isFifthCollapseOpen}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleFifthCollapse}
                   aria-controls="fifth-collapse"
                   aria-expanded={isFifthCollapseOpen}
-                  className="d-flex align-items-center text-uppercase"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
-                  O Que é SEO e para que serve ?
-                  <span>{isFifthCollapseOpen ? "-" : "+"}</span>
+                  O QUE É SEO E PARA QUE SERVE?
                 </StyledButton>
+                <CollapseOpen>{isFifthCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isFifthCollapseOpen}>
@@ -294,18 +322,24 @@ const MarketingDigital = () => {
             </Card>
           </div>
           <div className="col">
-            <Card>
-              <Card.Title>
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleSixthCollapse}
+                aria-controls="sixth-collapse"
+                aria-expanded={isSixthCollapseOpen}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleSixthCollapse}
                   aria-controls="sixth-collapse"
                   aria-expanded={isSixthCollapseOpen}
-                  className="d-flex align-items-center text-uppercase"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
-                  Quanto custa contratar uma Agência de MKT Digital ?
-                  <span>{isSixthCollapseOpen ? "-" : "+"}</span>
+                  QUANTO CUSTA CONTRATAR UMA AGÊNCIA DE MKT DIGITAL ?
                 </StyledButton>
+                <CollapseOpen>{isSixthCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isSixthCollapseOpen}>
@@ -324,18 +358,24 @@ const MarketingDigital = () => {
               </StyledCollapse>
             </Card>
 
-            <Card>
-              <Card.Title>
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleSeventhCollapse}
+                aria-controls="seventh-collapse"
+                aria-expanded={isSeventhCollapseOpen}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleSeventhCollapse}
                   aria-controls="seventh-collapse"
                   aria-expanded={isSeventhCollapseOpen}
-                  className="d-flex align-items-center text-uppercase"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
-                  As Redes sociais realmente podem ajudar ?
-                  <span>{isSeventhCollapseOpen ? "-" : "+"}</span>
+                  AS REDES SOCIAIS REALMENTE PODEM AJUDAR?
                 </StyledButton>
+                <CollapseOpen>{isSeventhCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isSeventhCollapseOpen}>
@@ -352,18 +392,25 @@ const MarketingDigital = () => {
                 </div>
               </StyledCollapse>
             </Card>
-            <Card>
-              <Card.Title>
+
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleEighthCollapse}
+                aria-controls="eighth-collapse"
+                aria-expanded={isEighthCollapseOpen}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleEighthCollapse}
                   aria-controls="eighth-collapse"
                   aria-expanded={isEighthCollapseOpen}
-                  className="d-flex align-items-center text-uppercase"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
-                  Minha empresa realmente precisa de um blog ?
-                  <span>{isEighthCollapseOpen ? "-" : "+"}</span>
+                  MINHA EMPRESA REALMENTE PRECISA DE UM BLOG ?
                 </StyledButton>
+                <CollapseOpen>{isEighthCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isEighthCollapseOpen}>
@@ -383,18 +430,24 @@ const MarketingDigital = () => {
               </StyledCollapse>
             </Card>
 
-            <Card>
-              <Card.Title>
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleNinthCollapse}
+                aria-controls="ninth-collapse"
+                aria-expanded={handleNinthCollapse}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleNinthCollapse}
                   aria-controls="ninth-collapse"
                   aria-expanded={isNinthCollapseOpen}
-                  className="d-flex align-items-center text-uppercase"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
-                  E-mail marketing ainda é importante ?
-                  <span>{isNinthCollapseOpen ? "-" : "+"}</span>
+                  E-MAIL MARKETING AINDA É IMPORTANTE ?
                 </StyledButton>
+                <CollapseOpen>{isNinthCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isNinthCollapseOpen}>
@@ -409,18 +462,25 @@ const MarketingDigital = () => {
                 </div>
               </StyledCollapse>
             </Card>
-            <Card>
-              <Card.Title>
+
+            <Card className="mb-2">
+              <Card.Title
+                variant="link"
+                onClick={handleTenthCollapse}
+                aria-controls="tenth-collapse"
+                aria-expanded={isTenthCollapseOpen}
+                className="d-flex justify-content-between"
+              >
                 <StyledButton
                   variant="link"
                   onClick={handleTenthCollapse}
                   aria-controls="tenth-collapse"
                   aria-expanded={isTenthCollapseOpen}
-                  className="d-flex align-items-center text-uppercase"
+                  className="d-flex align-items-center text-uppercase pl-5 cursor-pointer"
                 >
-                  Eu preciso usar google ads + seo na estratégia ?
-                  <span>{isTenthCollapseOpen ? "-" : "+"}</span>
+                  EU PRECISO USAR GOOGLE ADS + SEO NA ESTRATÉGIA ?
                 </StyledButton>
+                <CollapseOpen>{isTenthCollapseOpen ? "-" : "+"}</CollapseOpen>
               </Card.Title>
 
               <StyledCollapse in={isTenthCollapseOpen}>
