@@ -1,15 +1,15 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { FaWhatsapp } from 'react-icons/fa';
+// import { FaWhatsapp } from 'react-icons/fa';
 
 function Cards({ name, image, description }) {
-  const whatsappNumber = '5511967602269';
+  // const whatsappNumber = '5511967602269';
 
-  const handleAgendar = () => {
-    const message = 'Olá, gostaria de Orçamento.';
-    window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`);
-  };
+  // const handleAgendar = () => {
+  //   const message = 'Olá, gostaria de Orçamento.';
+  //   window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`);
+  // };
 
   return (
     <Card style={{ width: '100%' }}>
