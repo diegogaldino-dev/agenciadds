@@ -23,7 +23,7 @@ const NavBar = () => {
             alignItems: "center",
           }}
         >
-          <img src={Logo} alt="" style={{ width: "100px" }} />
+          <img src={Logo} alt="" style={{ width: "90px" }} />
           <TextLogo>DDS - Agencia de Desenvolvimento</TextLogo>
         </div>
       </Navbar.Brand>
