@@ -126,7 +126,7 @@ const Contato = () => {
                     href="mailto:contato@contato"
                     onClick={handleEmailClick}
                   >
-                    <FaEnvelope className="mr-4 text-white" /> contato@contato
+                    <FaEnvelope className="mr-4 text-white" /> contato@ddsdesenvolvimento.com.br
                   </LinkWithoutUnderline>
                 </ParagrafoDoTextcolorContato>
 
