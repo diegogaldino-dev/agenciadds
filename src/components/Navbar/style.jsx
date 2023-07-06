@@ -39,6 +39,8 @@ export const CustomNavbar = styled(Navbar)`
 
 export const TextLogo = styled.span`
   color: #fff;
+  text-shadow: -1px -1px 0px #a924f0, -1px 1px 0px #a924f0, 1px -1px 0px #a924f0,
+    1px 0px 0px #a924f0;
   margin-left: 5px;
   margin-top: 10px;
   @media screen and (max-width: 767px) {
