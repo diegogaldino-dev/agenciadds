@@ -15,6 +15,8 @@ import Desen from "../../img/icons/19362653.jpg";
 import social from "../../img/icons/3271883.jpg";
 import marketing from "../../img/icons/5618169.jpg";
 
+import Template1 from "../../img/templates/template1.png"
+
 
 import Cards from "./Cards/Cards";
 
@@ -103,7 +105,7 @@ const Home = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400"
+                src={Template1}
                 alt="Project 1"
               />
               <Carousel.Caption className="carousel-caption">

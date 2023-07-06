@@ -95,9 +95,9 @@ const Contato = () => {
                   rows="5"
                 ></textarea>
               </div>
-              <div className="mb-3">
-                <ReCAPTCHA sitekey="SUA_CHAVE_DO_RECAPTCHA" />
-              </div>
+              {/* <div className="mb-3">
+                <ReCAPTCHA sitekey="6Ldf8PwmAAAAAEVhqievW7oqtb6ieqpOkb7zBaxL" />
+              </div> */}
               <button type="submit" className="btn btn-primary">
                 Enviar
               </button>
@@ -123,7 +123,7 @@ const Contato = () => {
                 <ParagrafoDoTextcolorContato>
                   <LinkWithoutUnderline
                     className="text-white shadow-lg"
-                    href="mailto:contato@contato"
+                    href="mailto:contato@ddsdesenvolvimento.com.br"
                     onClick={handleEmailClick}
                   >
                     <FaEnvelope className="mr-4 text-white" /> contato@ddsdesenvolvimento.com.br
