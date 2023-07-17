@@ -9,7 +9,13 @@ import {
   SocialLink,
   SocialIcon,
 } from "./style";
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const QuemSomos = () => {
   return (
@@ -22,10 +28,7 @@ const QuemSomos = () => {
         />
         <div className="position-absolute top-0 start-0 mt-5">
           <div className="container">
-            <div
-              className="d-flex flex-column align-items-start"
-              style={{ marginLeft: "120px" }}
-            >
+          <div className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4">
               <Title>Quem Somos</Title>
             </div>
           </div>
@@ -46,93 +49,99 @@ const QuemSomos = () => {
       <section className="container mt-5">
         <h2>Nossa Equipe</h2>
         <ContainerCards className="card-container">
-          <CardQuemSomos className="card shadow-lg">
-            <img
-              className="card-img-top"
-              src="https://via.placeholder.com/300x300"
-              alt="Member 1"
-              style={{ width: "300px", height: "300px" }}
-            />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <SocialContainer>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaInstagram />
-                  </SocialIcon>
-                </SocialLink>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaFacebook />
-                  </SocialIcon>
-                </SocialLink>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaLinkedin />
-                  </SocialIcon>
-                </SocialLink>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaWhatsapp />
-                  </SocialIcon>
-                </SocialLink>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaEnvelope />
-                  </SocialIcon>
-                </SocialLink>
-              </SocialContainer>
+          <div className="row">
+            <div className="col-md-6">
+              <CardQuemSomos className="card shadow-lg">
+                <img
+                  className="card-img-top"
+                  src="https://via.placeholder.com/300x300"
+                  alt="Member 1"
+                  style={{ width: "300px", height: "300px" }}
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <SocialContainer>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaInstagram />
+                      </SocialIcon>
+                    </SocialLink>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaFacebook />
+                      </SocialIcon>
+                    </SocialLink>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaLinkedin />
+                      </SocialIcon>
+                    </SocialLink>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaWhatsapp />
+                      </SocialIcon>
+                    </SocialLink>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaEnvelope />
+                      </SocialIcon>
+                    </SocialLink>
+                  </SocialContainer>
+                </div>
+              </CardQuemSomos>
             </div>
-          </CardQuemSomos>
 
-          <CardQuemSomos className="card shadow-lg">
-            <img
-              className="card-img-top"
-              src="https://via.placeholder.com/300x300"
-              alt="Member 1"
-              style={{ width: "300px", height: "300px" }}
-            />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <SocialContainer>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaInstagram />
-                  </SocialIcon>
-                </SocialLink>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaFacebook />
-                  </SocialIcon>
-                </SocialLink>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaLinkedin />
-                  </SocialIcon>
-                </SocialLink>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaWhatsapp />
-                  </SocialIcon>
-                </SocialLink>
-                <SocialLink href="#">
-                  <SocialIcon>
-                    <FaEnvelope />
-                  </SocialIcon>
-                </SocialLink>
-              </SocialContainer>
+            <div className="col-md-6">
+              <CardQuemSomos className="card shadow-lg">
+                <img
+                  className="card-img-top"
+                  src="https://via.placeholder.com/300x300"
+                  alt="Member 1"
+                  style={{ width: "300px", height: "300px" }}
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <SocialContainer>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaInstagram />
+                      </SocialIcon>
+                    </SocialLink>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaFacebook />
+                      </SocialIcon>
+                    </SocialLink>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaLinkedin />
+                      </SocialIcon>
+                    </SocialLink>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaWhatsapp />
+                      </SocialIcon>
+                    </SocialLink>
+                    <SocialLink href="#">
+                      <SocialIcon>
+                        <FaEnvelope />
+                      </SocialIcon>
+                    </SocialLink>
+                  </SocialContainer>
+                </div>
+              </CardQuemSomos>
             </div>
-          </CardQuemSomos>
+          </div>
         </ContainerCards>
       </section>
     </>

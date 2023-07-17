@@ -1,5 +1,33 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import styled from "styled-components";
+
+const WhatsAppButtonContainer = styled.div`
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  @media (max-width: 576px) {
+    bottom: 10px;
+    right: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+`;
+
+const WhatsAppIcon = styled(FaWhatsapp)`
+  font-size: 70px;
+  color: green;
+
+  @media (max-width: 576px) {
+    font-size: 50px;
+    margin-right: 35px;
+  }
+`;
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
@@ -18,14 +46,9 @@ const WhatsAppButton = () => {
   };
 
   return (
-    <div
-      className="fixed-bottom d-flex justify-content-end mb-4"
-      style={{ zIndex: 999, marginRight: "20px", cursor:"pointer"}}
-    >
-      <span onClick={handleWhatsAppClick}>
-        <FaWhatsapp color="green" style={{fontSize:"70px"}}/>
-      </span>
-    </div>
+    <WhatsAppButtonContainer onClick={handleWhatsAppClick}>
+      <WhatsAppIcon />
+    </WhatsAppButtonContainer>
   );
 };
 

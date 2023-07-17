@@ -63,12 +63,21 @@ export const ImageQuemSomos = styled.img`
   background-position: center top -8px;
   width: 100%; 
   height: 600px; 
-  
-`
+
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+
+  @media (max-width: 576px) {
+    height: 240px;
+    
+  }
+`;
+
 
 export const Title = styled.h2`
   font-size: 60px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   background-color: rgb(135, 23, 157);
   color: #fff;
   display: inline-block;
@@ -77,6 +86,15 @@ export const Title = styled.h2`
   margin-top: 60px;
   box-shadow: 60px -16px teal;
 
+  @media (max-width: 768px) {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 30px;
+    margin-top: -10px;
+  }
 `;
 
 
