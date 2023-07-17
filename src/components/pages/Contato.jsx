@@ -53,7 +53,7 @@ const Contato = () => {
         <h6>Seu contato é muito importante</h6>
         <div className="row">
           <div className="col-md-6">
-            <form className="mt-4" onSubmit={handleFormSubmit}>
+            <form className="mt-4 mb-4" onSubmit={handleFormSubmit}>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
                   Nome:
