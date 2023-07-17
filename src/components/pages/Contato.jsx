@@ -1,7 +1,6 @@
 import React from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-// import ReCAPTCHA from "react-google-recaptcha";
 import {
   FaInstagram,
   FaFacebookSquare,
@@ -43,10 +42,7 @@ const Contato = () => {
         />
         <div className="position-absolute top-0 start-0 mt-5">
           <div className="container">
-            <div
-              className="d-flex flex-column align-items-start"
-              style={{ marginLeft: "120px" }}
-            >
+            <div className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4">
               <Title>Fale Conosco</Title>
             </div>
           </div>
@@ -95,9 +91,6 @@ const Contato = () => {
                   rows="5"
                 ></textarea>
               </div>
-              {/* <div className="mb-3">
-                <ReCAPTCHA sitekey="6Ldf8PwmAAAAAEVhqievW7oqtb6ieqpOkb7zBaxL" />
-              </div> */}
               <button type="submit" className="btn btn-primary">
                 Enviar
               </button>
