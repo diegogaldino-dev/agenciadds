@@ -25,7 +25,7 @@ const WhatsAppIcon = styled(FaWhatsapp)`
 
   @media (max-width: 576px) {
     font-size: 50px;
-    margin-right: -13px;
+    margin-right: 15px;
   }
 `;
 

@@ -51,7 +51,7 @@ const QuemSomos = () => {
         <ContainerCards className="card-container">
           <div className="row">
             <div className="col-md-6">
-              <CardQuemSomos className="card shadow-lg">
+              <CardQuemSomos className="card shadow-lg mt-2">
                 <img
                   className="card-img-top"
                   src="https://via.placeholder.com/300x300"
@@ -97,7 +97,7 @@ const QuemSomos = () => {
             </div>
 
             <div className="col-md-6">
-              <CardQuemSomos className="card shadow-lg">
+              <CardQuemSomos className="card shadow-lg mt-2">
                 <img
                   className="card-img-top"
                   src="https://via.placeholder.com/300x300"
