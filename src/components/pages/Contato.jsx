@@ -24,7 +24,7 @@ const Contato = () => {
     };
 
     emailjs
-      .send("service_fydjchd", "template_njfb402", templateParams, "n2OzR1QUrxe-xXfSZ")
+      .send("service_gkdoxvk", "template_83jgowb", templateParams, "88DF6UT7AMerV1tQt")
       .then((response) => {
         console.log("E-mail enviado com sucesso!", response.status, response.text);
         // Limpe o formulário após o envio
