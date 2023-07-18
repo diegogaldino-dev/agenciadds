@@ -220,8 +220,11 @@ export const LinkWithoutUnderline = styled.a`
 
 export const ParagrafoDoTextcolorContato = styled.p`
   margin-top: 50px;
-  font-size: 22px;
-  
+  font-size: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `
 
 export const TitleContato = styled.h2`

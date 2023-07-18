@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Title, Text, TextImportancia, BackImagemMidia,TextBackground,ParagrafoDoTextBackground, DivTextCreater } from "./style";
+import { Image, TitleMark, Text, TextImportancia, BackImagemMidia,TextBackground,ParagrafoDoTextBackground, DivTextCreater } from "./style";
 import { FaChevronRight } from "react-icons/fa";
 import { AiFillFileText } from 'react-icons/ai';
 import { BsCodeSlash } from 'react-icons/bs';
@@ -19,10 +19,10 @@ const Social_Media = () => {
         <div className="position-absolute top-0 start-0">
           <container>
             <div
-              className="d-flex flex-column align-items-start"
-              style={{ marginLeft: "120px" }}
+              className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4"
+             
             >
-              <Title>Social Midia</Title>
+              <TitleMark>Social Midia</TitleMark>
               <Text className="text-left custom-text">
                 Pensando em potencializar sua presença online e alcançar um
                 público maior? Conte com os serviços de social midia da DDS
@@ -53,11 +53,11 @@ const Social_Media = () => {
       </TextImportancia>
 
       <BackImagemMidia>
-      <div className="container pb-5">
+        <div className="container pb-5">
           <div className="row">
             <div className="col-md-6" style={{ marginTop: "220px" }}>
               <TextBackground className="shadow-lg">
-              Como funciona o Processo
+                Como funciona o Processo
               </TextBackground>
               <ParagrafoDoTextBackground className="shadow-lg">
                 Quando se fala em criação de sites profissionais, planejamento
@@ -99,7 +99,6 @@ const Social_Media = () => {
             </DivTextCreater>
           </div>
         </div>
-
       </BackImagemMidia>
     </>
   );
