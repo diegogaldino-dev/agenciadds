@@ -1,7 +1,8 @@
 import React from "react";
-import { Carousel, 
+import {
+  Carousel,
   // Card
- } from "react-bootstrap";
+} from "react-bootstrap";
 import CarouselHome from "./Carrousel/CarouselHome";
 import Marquee from "react-fast-marquee";
 
@@ -15,8 +16,7 @@ import Desen from "../../img/icons/19362653.jpg";
 import social from "../../img/icons/3271883.jpg";
 import marketing from "../../img/icons/5618169.jpg";
 
-import Template1 from "../../img/templates/template1.png"
-
+import Template1 from "../../img/templates/template1.png";
 
 import Cards from "./Cards/Cards";
 
@@ -103,11 +103,7 @@ const Home = () => {
           <h1 className="text-center mb-4">Alguns trabalhos</h1>
           <Carousel>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={Template1}
-                alt="Project 1"
-              />
+              <img className="d-block w-100" src={Template1} alt="Project 1" />
               <Carousel.Caption className="carousel-caption">
                 <h3>Project 1</h3>
                 <p>Project description</p>

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import {
   Image,
-  Title,
+  TitleMark,
   Text,
   TextImportancia,
   StyledButton,
   StyledCollapse,
   CollapseOpen,
 } from "./style";
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 
 import mktImg from "../../img/31958.jpg";
 
@@ -22,7 +22,7 @@ const MarketingDigital = () => {
   const [isSeventhCollapseOpen, setIsSeventhCollapseOpen] = useState(false);
   const [isEighthCollapseOpen, setIsEighthCollapseOpen] = useState(false);
   const [isNinthCollapseOpen, setIsNinthCollapseOpen] = useState(false);
-  const [isTenthCollapseOpen, setIsTenthCollapseOpen] = useState(false);
+  // const [isTenthCollapseOpen, setIsTenthCollapseOpen] = useState(false);
 
   const handleFirstCollapse = () => {
     setIsFirstCollapseOpen(!isFirstCollapseOpen);
@@ -60,9 +60,9 @@ const MarketingDigital = () => {
     setIsNinthCollapseOpen(!isNinthCollapseOpen);
   };
 
-  const handleTenthCollapse = () => {
-    setIsTenthCollapseOpen(!isTenthCollapseOpen);
-  };
+  // const handleTenthCollapse = () => {
+  //   setIsTenthCollapseOpen(!isTenthCollapseOpen);
+  // };
 
   return (
     <>
@@ -73,13 +73,12 @@ const MarketingDigital = () => {
           alt="Imagem de Criação de Sites"
         />
         <div className="position-absolute top-0 start-0">
-          <container>
-            <div
-              className="d-flex flex-column align-items-start"
-              style={{ marginLeft: "120px" }}
-            >
-              <Title>Marketing Digital</Title>
-              <Text className="text-left custom-text">
+          <Container className="p-3">
+            <div className="d-flex flex-column align-items-start">
+              <TitleMark className="text-center text-md-left">
+                Marketing Digital
+              </TitleMark>
+              <Text className="text-center text-md-left custom-text">
                 Pensou em criação de sites? Está no lugar certo! Na DDS Agência
                 de Desenvolvimento, oferecemos criação de sites profissionais,
                 personalizados, gerenciáveis e administráveis. Desenvolvemos
@@ -89,55 +88,90 @@ const MarketingDigital = () => {
                 atualizado.
               </Text>
             </div>
-          </container>
+          </Container>
         </div>
       </div>
 
       <TextImportancia>
-        <div className="container pb-5 pt-5 text-center">
+        <Container className="py-5 text-center">
           <h3 style={{ color: "#87179D" }}>
             Como funciona o Processo na Agência de MKT Digital – DDS
           </h3>
-        </div>
+        </Container>
       </TextImportancia>
-      <div className="container d-flex">
-        <div className="flex-fill">
-          <div>
-            Imagem ou icon
-            <h4 className="uppercase">Alinhamento com o Time</h4>
-            <ul>
-              <li>Equilíbrio e União entre MKT e Vendas</li>
-              <li>Alinhamento de MQL e SQL</li>
-              <li>Definição de Processos</li>
-              <li>Definição de Investimentos</li>
-              <li>Metas e Desafios Encontrados</li>
-            </ul>
+      <div className="container">
+        <div className="d-flex flex-wrap">
+          <div className="flex-fill">
+            <div className="text-center">
+              Imagem ou icon
+              <h4 className="text-uppercase">Alinhamento com o Time</h4>
+              <ul className="list-unstyled">
+                <li>
+                  <span className="bullet"></span>Equilíbrio e União entre MKT e
+                  Vendas
+                </li>
+                <li>
+                  <span className="bullet"></span>Alinhamento de MQL e SQL
+                </li>
+                <li>
+                  <span className="bullet"></span>Definição de Processos
+                </li>
+                <li>
+                  <span className="bullet"></span>Definição de Investimentos
+                </li>
+                <li>
+                  <span className="bullet"></span>Metas e Desafios Encontrados
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="flex-fill">
-          <div>
-            Imagem ou icon
-            <h4 className="uppercase">Alinhamento com o Time</h4>
-            <ul>
-              <li>Equilíbrio e União entre MKT e Vendas</li>
-              <li>Alinhamento de MQL e SQL</li>
-              <li>Definição de Processos</li>
-              <li>Definição de Investimentos</li>
-              <li>Metas e Desafios Encontrados</li>
-            </ul>
+          <div className="flex-fill">
+            <div className="text-center">
+              Imagem ou icon
+              <h4 className="text-uppercase">Alinhamento com o Time</h4>
+              <ul className="list-unstyled">
+                <li>
+                  <span className="bullet"></span>Equilíbrio e União entre MKT e
+                  Vendas
+                </li>
+                <li>
+                  <span className="bullet"></span>Alinhamento de MQL e SQL
+                </li>
+                <li>
+                  <span className="bullet"></span>Definição de Processos
+                </li>
+                <li>
+                  <span className="bullet"></span>Definição de Investimentos
+                </li>
+                <li>
+                  <span className="bullet"></span>Metas e Desafios Encontrados
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="flex-fill">
-          <div>
-            Imagem ou icon
-            <h4 className="uppercase">Alinhamento com o Time</h4>
-            <ul>
-              <li>Equilíbrio e União entre MKT e Vendas</li>
-              <li>Alinhamento de MQL e SQL</li>
-              <li>Definição de Processos</li>
-              <li>Definição de Investimentos</li>
-              <li>Metas e Desafios Encontrados</li>
-            </ul>
+          <div className="flex-fill">
+            <div className="text-center">
+              Imagem ou icon
+              <h4 className="text-uppercase">Alinhamento com o Time</h4>
+              <ul className="list-unstyled">
+                <li>
+                  <span className="bullet"></span>Equilíbrio e União entre MKT e
+                  Vendas
+                </li>
+                <li>
+                  <span className="bullet"></span>Alinhamento de MQL e SQL
+                </li>
+                <li>
+                  <span className="bullet"></span>Definição de Processos
+                </li>
+                <li>
+                  <span className="bullet"></span>Definição de Investimentos
+                </li>
+                <li>
+                  <span className="bullet"></span>Metas e Desafios Encontrados
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -147,7 +181,7 @@ const MarketingDigital = () => {
           Perguntas Frequentes
         </h2>
         <div className="row">
-          <div className="col">
+          <div className="col-lg">
             <Card className="mb-2">
               <Card.Title
                 variant="link"
@@ -205,7 +239,7 @@ const MarketingDigital = () => {
               </Card.Title>
 
               <StyledCollapse in={isSecondCollapseOpen}>
-                <div id="first-collapse">
+                <div id="second-collapse">
                   <Card.Body>
                     SIM. Nossa agência possui toda a infraestrutura e
                     conhecimento necessários para lançamentos de info produtos.
@@ -250,7 +284,8 @@ const MarketingDigital = () => {
                 </div>
               </StyledCollapse>
             </Card>
-
+          </div>
+          <div className="col-lg">
             <Card className="mb-2">
               <Card.Title
                 variant="link"
@@ -320,8 +355,7 @@ const MarketingDigital = () => {
                 </div>
               </StyledCollapse>
             </Card>
-          </div>
-          <div className="col">
+
             <Card className="mb-2">
               <Card.Title
                 variant="link"
@@ -357,7 +391,8 @@ const MarketingDigital = () => {
                 </div>
               </StyledCollapse>
             </Card>
-
+          </div>
+          <div className="col">
             <Card className="mb-2">
               <Card.Title
                 variant="link"
@@ -463,7 +498,7 @@ const MarketingDigital = () => {
               </StyledCollapse>
             </Card>
 
-            <Card className="mb-2">
+            {/* <Card className="mb-2">
               <Card.Title
                 variant="link"
                 onClick={handleTenthCollapse}
@@ -496,7 +531,7 @@ const MarketingDigital = () => {
                   </Card.Body>
                 </div>
               </StyledCollapse>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>

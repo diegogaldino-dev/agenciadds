@@ -103,6 +103,49 @@ export const Title = styled.h2`
     margin-top: -10px;
   }
 `;
+export const TitleCreate = styled.h2`
+  font-size: 60px;
+  margin-bottom: 10px;
+  background-color: rgb(135, 23, 157);
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px 8px 8px 0px;
+  margin-top: 60px;
+  box-shadow: 60px -16px teal;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+`;
+
+export const TitleMark = styled.h2`
+  font-size: 60px;
+  margin-bottom: 10px;
+  background-color: rgb(135, 23, 157);
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px 8px 8px 0px;
+  margin-top: 60px;
+  box-shadow: 60px -16px teal;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+`;
 
 
 export const Text = styled.p`

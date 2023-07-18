@@ -15,7 +15,7 @@ const CarouselHome = () => {
           src={Imagem1}
           alt="Slide 1"
         />
-       <CarouselCaption className="carousel-caption">
+        <CarouselCaption className="carousel-caption">
           <CarouselTitle>Slide 1</CarouselTitle>
           <CarouselText>Text for slide 1</CarouselText>
         </CarouselCaption>
