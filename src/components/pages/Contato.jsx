@@ -1,27 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import {
-  FaInstagram,
-  FaFacebookSquare,
-  FaWhatsapp,
-  FaEnvelope,
-} from "react-icons/fa";
-import {
-  ImageCont,
-  Title,
-  TextContatoInfo,
-  LinkWithoutUnderline,
-  ParagrafoDoTextcolorContato,
-  TitleContato,
-} from "./style";
+import { FaInstagram, FaFacebookSquare, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { ImageCont, Title, TextContatoInfo, LinkWithoutUnderline, ParagrafoDoTextcolorContato, TitleContato } from "./style";
 
 import criacaoImg from "../../img/contato.jpg";
+import emailjs from "emailjs-com";
 
 const Contato = () => {
-  const handleFormSubmit = (event) => {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefone, setTelefone] = useState("");
+  const [mensagem, setMensagem] = useState("");
+
+  const enviarEmail = (event) => {
     event.preventDefault();
-    // Lógica para processar o formulário aqui
+
+    const templateParams = {
+      from_name: nome,
+      user_email: email,
+      phone: telefone,
+      message: mensagem,
+    };
+
+    emailjs
+      .send("service_fydjchd", "template_njfb402", templateParams, "n2OzR1QUrxe-xXfSZ")
+      .then((response) => {
+        console.log("E-mail enviado com sucesso!", response.status, response.text);
+        // Limpe o formulário após o envio
+        setNome("");
+        setEmail("");
+        setTelefone("");
+        setMensagem("");
+      })
+      .catch((error) => {
+        console.error("Erro ao enviar o e-mail:", error);
+      });
   };
 
   const handleWhatsappClick = () => {
@@ -35,11 +49,7 @@ const Contato = () => {
   return (
     <>
       <div className="position-relative">
-        <ImageCont
-          className="img-fluid"
-          src={criacaoImg}
-          alt="Imagem de Criação de Sites"
-        />
+        <ImageCont className="img-fluid" src={criacaoImg} alt="Imagem de Criação de Sites" />
         <div className="position-absolute top-0 start-0 mt-5">
           <div className="container">
             <div className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4">
@@ -53,18 +63,30 @@ const Contato = () => {
         <h6>Seu contato é muito importante</h6>
         <div className="row">
           <div className="col-md-6">
-            <form className="mt-4 mb-4" onSubmit={handleFormSubmit}>
+            <form className="mt-4 mb-4" onSubmit={enviarEmail}>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
                   Nome:
                 </label>
-                <input type="text" className="form-control" id="name" />
+                <input
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  value={nome}
+                  onChange={(e) => setNome(e.target.value)}
+                />
               </div>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
                   E-mail:
                 </label>
-                <input type="email" className="form-control" id="email" />
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </div>
               <div className="mb-3">
                 <label htmlFor="phone" className="form-label">
@@ -72,8 +94,8 @@ const Contato = () => {
                 </label>
                 <PhoneInput
                   country={"br"}
-                  value={null}
-                  onChange={(phone) => console.log(phone)}
+                  value={telefone}
+                  onChange={(phone) => setTelefone(phone)}
                   inputClass="form-control"
                   inputProps={{
                     id: "phone",
@@ -89,6 +111,8 @@ const Contato = () => {
                   className="form-control"
                   id="message"
                   rows="5"
+                  value={mensagem}
+                  onChange={(e) => setMensagem(e.target.value)}
                 ></textarea>
               </div>
               <button type="submit" className="btn btn-primary">
@@ -100,9 +124,7 @@ const Contato = () => {
             <TextContatoInfo className="p-4 rounded shadow-lg">
               <div>
                 <div className="text-center">
-                  <TitleContato className="text-center mt-4 shadow-lg">
-                    Contatos
-                  </TitleContato>
+                  <TitleContato className="text-center mt-4 shadow-lg">Contatos</TitleContato>
                 </div>
                 <ParagrafoDoTextcolorContato className="mr-3 text-white">
                   <LinkWithoutUnderline
