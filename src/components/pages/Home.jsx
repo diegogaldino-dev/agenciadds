@@ -16,7 +16,10 @@ import Desen from "../../img/icons/19362653.jpg";
 import social from "../../img/icons/3271883.jpg";
 import marketing from "../../img/icons/5618169.jpg";
 
-import Template1 from "../../img/templates/template1.png";
+import Template1 from "../../img/templates/porti01.jpeg";
+import Template2 from "../../img/templates/porti02.jpeg";
+import Template3 from "../../img/templates/porti03.jpeg";
+
 
 import Cards from "./Cards/Cards";
 
@@ -112,7 +115,7 @@ const Home = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400"
+                src={Template2}
                 alt="Project 2"
               />
               <Carousel.Caption className="carousel-caption">
@@ -123,7 +126,7 @@ const Home = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400"
+                src={Template3}
                 alt="Project 3"
               />
               <Carousel.Caption className="carousel-caption">
