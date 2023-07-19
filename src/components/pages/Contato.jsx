@@ -3,7 +3,6 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { FaInstagram, FaFacebookSquare, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { ImageCont, Title, TextContatoInfo, LinkWithoutUnderline, ParagrafoDoTextcolorContato, TitleContato } from "./style";
-
 import criacaoImg from "../../img/contato.jpg";
 import emailjs from "emailjs-com";
 
@@ -12,9 +11,17 @@ const Contato = () => {
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
   const [mensagem, setMensagem] = useState("");
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isFormError, setIsFormError] = useState(false);
 
   const enviarEmail = (event) => {
     event.preventDefault();
+
+    // Verifica se todos os campos foram preenchidos
+    if (!nome || !email || !telefone || !mensagem) {
+      setIsFormError(true);
+      return;
+    }
 
     const templateParams = {
       from_name: nome,
@@ -32,6 +39,8 @@ const Contato = () => {
         setEmail("");
         setTelefone("");
         setMensagem("");
+        setIsFormSubmitted(true);
+        setIsFormError(false);
       })
       .catch((error) => {
         console.error("Erro ao enviar o e-mail:", error);
@@ -48,6 +57,16 @@ const Contato = () => {
 
   return (
     <>
+      {isFormSubmitted && (
+        <div className="alert alert-success" role="alert">
+          O formulário foi enviado com sucesso!
+        </div>
+      )}
+      {isFormError && (
+        <div className="alert alert-danger" role="alert">
+          Por favor, preencha todos os campos antes de enviar o formulário.
+        </div>
+      )}
       <div className="position-relative">
         <ImageCont className="img-fluid" src={criacaoImg} alt="Imagem de Criação de Sites" />
         <div className="position-absolute top-0 start-0 mt-5">
@@ -173,6 +192,31 @@ const Contato = () => {
                 </ul>
               </div>
             </TextContatoInfo>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal do Bootstrap */}
+      <div className="modal" tabIndex="-1" role="dialog">
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Modal do Bootstrap</h5>
+              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              <p>Aqui você pode adicionar o conteúdo do modal do Bootstrap.</p>
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" data-dismiss="modal">
+                Fechar
+              </button>
+              <button type="button" className="btn btn-primary">
+                Salvar alterações
+              </button>
+            </div>
           </div>
         </div>
       </div>
