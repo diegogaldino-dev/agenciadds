@@ -10,8 +10,9 @@ import {
   FaPalette,
 } from "react-icons/fa";
 import { TiGroup } from "react-icons/ti";
-import { BsFillChatDotsFill } from "react-icons/bs";
+// import { BsFillChatDotsFill } from "react-icons/bs";
 import { ImCalculator } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 import Logo from "../../img/logo_oficial 1.svg";
 
@@ -30,12 +31,12 @@ function Footer() {
             <p className="text-center">DDS - Agência de Desenvolvimento</p>
             <ul className="list-unstyled d-flex flex-row justify-content-center">
               <li>
-                <a className="text-white px-2" href="#!">
+                <a className="text-white px-2" href="https://www.facebook.com/profile.php?id=100093569524691&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                   <FaFacebookSquare />
                 </a>
               </li>
               <li>
-                <a className="text-white px-2" href="#!">
+                <a className="text-white px-2" href="https://www.instagram.com/dds_desenvolvimento/" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </a>
               </li>
@@ -45,21 +46,21 @@ function Footer() {
             <h5 className="mb-4">A Agência</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <LinkWithoutUnderline href="#!" className="text-white">
+                <LinkWithoutUnderline as={Link} to="/quem-somos" className="text-white">
                   <TiGroup />
                   <span className="pe-3" />
                   Quem Somos
                 </LinkWithoutUnderline>
               </li>
-              <li className="mb-2">
-                <LinkWithoutUnderline href="#!" className="text-white">
+              {/* <li className="mb-2">
+                <LinkWithoutUnderline as={Link} to="/depoimentos" className="text-white">
                   <BsFillChatDotsFill />
                   <span className="pe-3" />
                   Depoimentos
                 </LinkWithoutUnderline>
-              </li>
+              </li> */}
               <li className="mb-2">
-                <LinkWithoutUnderline href="#!" className="text-white">
+                <LinkWithoutUnderline as={Link} to="/orcamento" className="text-white">
                   <ImCalculator />
                   <span className="pe-3" />
                   Orçamento
@@ -71,24 +72,24 @@ function Footer() {
             <h5 className="mb-4">Soluções</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <LinkWithoutUnderline href="#!" className="text-white">
+                <LinkWithoutUnderline as={Link} to="/criacao-de-sites" className="text-white">
                   <FaCode />
                   <span className="pe-3" />
                   Criação de sites
                 </LinkWithoutUnderline>
               </li>
               <li className="mb-2">
-                <LinkWithoutUnderline href="#!" className="text-white">
+                <LinkWithoutUnderline as={Link} to="/marketing-digital" className="text-white">
                   <FaMobileAlt />
                   <span className="pe-3" />
                   Marketing Digital
                 </LinkWithoutUnderline>
               </li>
               <li className="mb-2">
-                <LinkWithoutUnderline href="#!" className="text-white">
+                <LinkWithoutUnderline as={Link} to="/social-midia" className="text-white">
                   <FaPalette />
                   <span className="pe-3" />
-                  Midia Digital
+                  Social Mídia
                 </LinkWithoutUnderline>
               </li>
             </ul>
@@ -101,7 +102,7 @@ function Footer() {
                 <p className="mb-0">+01 234 567 89</p>
               </li>
               <li className="d-flex align-items-center">
-                <FaEnvelope size={20}className="pe-2 mb-0" />
+                <FaEnvelope size={20} className="pe-2 mb-0" />
                 <p className="mb-0">contato@ddsdesenvolvimento.com.br</p>
               </li>
             </ul>
