@@ -36,39 +36,62 @@ const QuemSomos = () => {
       </div>
 
       <div className="container mt-4">
-        <h1>Sobre Nós</h1>
-        Fundada por Diego Galdino, programador, e Dayane Mitzy, especialista em
-        Social Media, nossa empresa nasceu com o objetivo de atender o máximo de
-        pessoas e empresas possível. Acreditamos que todas as empresas,
-        independentemente do tamanho ou setor, merecem ter acesso a soluções
-        digitais de qualidade que impulsionem seu sucesso. Com vasta experiência
-        em nossas áreas de atuação e um compromisso inabalável com a excelência,
-        nos dedicamos a oferecer soluções personalizadas para cada cliente.
-        Entendemos que cada empresa tem necessidades únicas e, por isso,
-        trabalhamos de forma personalizada para atender a cada uma delas de
-        maneira eficiente e impactante. Nosso foco é atender todas as classes de
-        empresas possíveis, desde pequenos empreendimentos até grandes
-        corporações. Acreditamos que todos têm o direito de contar com serviços
-        de qualidade que impulsionem seus negócios e os destaquem no mercado. Ao
-        longo de nossa trajetória, buscamos constantemente inovar e nos
-        aprimorar para oferecer o que há de melhor em design, SEO, mídias
-        sociais e muito mais. Nossa equipe é formada por profissionais
-        experientes e altamente capacitados, que trabalham com dedicação e
-        paixão para alcançar os melhores resultados para nossos clientes.
-        Estamos empenhados em construir relacionamentos sólidos com nossos
-        clientes, entendendo suas necessidades e colaborando em seus projetos
-        para alcançar resultados excepcionais. Acreditamos no poder da parceria
-        e no crescimento conjunto, e é com esse espírito que trabalhamos todos
-        os dias. Seja qual for o desafio que sua empresa enfrenta, estamos
-        prontos para enfrentá-lo ao seu lado. Queremos ser parte da sua jornada
-        de sucesso e ajudá-lo a alcançar o próximo nível. Conheça nossos
-        serviços e descubra como podemos fazer a diferença para o seu negócio.
-        Junte-se a nós e potencialize sua presença digital para conquistar novas
-        oportunidades e alcançar seus objetivos de forma impactante e duradoura.
-        <h2 className="mt-5">
-          Teremos o maior prazer em fazer parte do sucesso de sua empresa.
-        </h2>
+      <h1 className="mb-4">Sobre Nós</h1>
+      <div className="row">
+        <div className="col-md-12">
+          <p>
+            Fundada por Diego Galdino, programador, e Dayane Mitzy,
+            especialista em Social Media, nossa empresa nasceu com o objetivo
+            de atender o máximo de pessoas e empresas possível. Acreditamos que
+            todas as empresas, independentemente do tamanho ou setor, merecem
+            ter acesso a soluções digitais de qualidade que impulsionem seu
+            sucesso.
+          </p>
+          <p>
+            Com vasta experiência em nossas áreas de atuação e um compromisso
+            inabalável com a excelência, nos dedicamos a oferecer soluções
+            personalizadas para cada cliente. Entendemos que cada empresa tem
+            necessidades únicas e, por isso, trabalhamos de forma personalizada
+            para atender a cada uma delas de maneira eficiente e impactante.
+          </p>
+          <p>
+            Nosso foco é atender todas as classes de empresas possíveis, desde
+            pequenos empreendimentos até grandes corporações. Acreditamos que
+            todos têm o direito de contar com serviços de qualidade que
+            impulsionem seus negócios e os destaquem no mercado.
+          </p>
+          <p>
+            Ao longo de nossa trajetória, buscamos constantemente inovar e nos
+            aprimorar para oferecer o que há de melhor em design, SEO, mídias
+            sociais e muito mais. Nossa equipe é formada por profissionais
+            experientes e altamente capacitados, que trabalham com dedicação e
+            paixão para alcançar os melhores resultados para nossos clientes.
+          </p>
+          <p>
+            Estamos empenhados em construir relacionamentos sólidos com nossos
+            clientes, entendendo suas necessidades e colaborando em seus
+            projetos para alcançar resultados excepcionais. Acreditamos no poder
+            da parceria e no crescimento conjunto, e é com esse espírito que
+            trabalhamos todos os dias.
+          </p>
+          <p>
+            Seja qual for o desafio que sua empresa enfrenta, estamos prontos
+            para enfrentá-lo ao seu lado. Queremos ser parte da sua jornada de
+            sucesso e ajudá-lo a alcançar o próximo nível. Conheça nossos
+            serviços e descubra como podemos fazer a diferença para o seu
+            negócio.
+          </p>
+          <p>
+            Junte-se a nós e potencialize sua presença digital para conquistar
+            novas oportunidades e alcançar seus objetivos de forma impactante e
+            duradoura.
+          </p>
+          <h2 className="mt-5">
+            Teremos o maior prazer em fazer parte do sucesso de sua empresa.
+          </h2>
+        </div>
       </div>
+    </div>
 
       <section className="container mt-5">
         <h2>Nossa Equipe</h2>
