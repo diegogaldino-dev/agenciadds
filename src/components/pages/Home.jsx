@@ -70,7 +70,7 @@ const Home = () => {
                   name="Desenvolvimento de Sites"
                   image={Desen}
                   alt=""
-                  description="We offer professional web development services to create responsive and user-friendly websites tailored to your specific needs."
+                  description="Transforme sua presença online com um site profissional e responsivo. Oferecemos serviços de desenvolvimento de sites sob medida para atender às suas necessidades específicas. Além disso, também realizamos atualizações em websites existentes, garantindo que sua presença digital esteja sempre atualizada e otimizada."
                 />
               </div>
               <div
@@ -82,7 +82,7 @@ const Home = () => {
                   name="Marketing Digital"
                   image={marketing}
                   alt=""
-                  description="Our team specializes in developing mobile applications for iOS and Android platforms, providing seamless and engaging user experiences."
+                  description="Potencialize sua marca online com estratégias de marketing digital personalizadas. Oferecemos soluções completas e inovadoras em SEO, mídias sociais, anúncios e muito mais para impulsionar seu negócio. Mantenha sua presença digital atualizada, otimizada, competitiva e impactante com nossos serviços especializados e eficientes."
                 />
               </div>
               <div
@@ -94,7 +94,7 @@ const Home = () => {
                   name="Mídia Digital"
                   image={social}
                   alt=""
-                  description="Our skilled designers create visually appealing and intuitive user interfaces, ensuring a delightful user experience for your applications and websites."
+                  description="Aumente sua visibilidade online com estratégias personalizadas e eficientes. Oferecemos soluções inovadoras em design, SEO, mídias sociais e mais para alavancar sua marca de forma impressionante. Atualize e otimize consistentemente e proativamente sua presença digital com nossos serviços especializados e profissionais."
                 />
               </div>
             </div>
