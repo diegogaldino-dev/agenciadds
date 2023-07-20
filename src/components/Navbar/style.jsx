@@ -43,6 +43,7 @@ export const TextLogo = styled.span`
     1px 0px 0px #a924f0;
   margin-left: 5px;
   margin-top: 10px;
+  font-size: 15px;
   @media screen and (max-width: 767px) {
     font-size: 10px;
   }

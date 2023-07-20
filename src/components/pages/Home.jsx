@@ -16,9 +16,9 @@ import Desen from "../../img/icons/19362653.jpg";
 import social from "../../img/icons/3271883.jpg";
 import marketing from "../../img/icons/5618169.jpg";
 
-import Template1 from "../../img/templates/porti01.jpeg";
-import Template2 from "../../img/templates/porti02.jpeg";
-import Template3 from "../../img/templates/porti03.jpeg";
+import Template1 from "../../img/templates/Para o site DDS 1.png";
+import Template2 from "../../img/templates/Para o site DDS 2.png";
+import Template3 from "../../img/templates/Para o site DDS 3.png";
 
 
 import Cards from "./Cards/Cards";
@@ -36,7 +36,7 @@ const Home = () => {
     <div>
       <CarouselHome />
       <div className="container">
-        <div>
+        <div className="mt-5">
           <Marquee gradient={true} speed={100}>
             <LogoImage src={ViraFesta} alt="Logo 1" />
             <LogoImage src={Polly} alt="Logo 2" />
