@@ -63,13 +63,14 @@ export const StyledNavDropdown = styled(NavDropdown)`
 
 export const StyledNavbar = styled(Navbar)`
   background-image: linear-gradient(
-    65deg,
-    #bd41ae 0,
-    #a42fa7 25%,
-    #86169d 50%,
-    #650093 75%,
-    #43008d 100%
-  );
+  65deg,
+  #43008d 0,
+  #650093 25%,
+  #86169d 50%,
+  #a42fa7 75%,
+  #bd41ae 100%
+);
+  
 `;
 export const TextContainer = styled.span`
   font-size: 20px;
