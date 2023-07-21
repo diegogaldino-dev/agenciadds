@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   Image,
   TitleMark,
@@ -18,6 +20,9 @@ import Relacionamento from "../../img/icons/relacionamentoeresultado.jpg"
 
 
 const MarketingDigital = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
   const [isFirstCollapseOpen, setIsFirstCollapseOpen] = useState(false);
   const [isSecondCollapseOpen, setIsSecondCollapseOpen] = useState(false);
   const [isThirdCollapseOpen, setIsThirdCollapseOpen] = useState(false);
@@ -71,7 +76,7 @@ const MarketingDigital = () => {
 
   return (
     <>
-      <div className="position-relative">
+      <div className="position-relative" data-aos="fade-up" data-aos-duration="1000">
         <Image
           className="img-fluid"
           src={mktImg}
@@ -96,15 +101,15 @@ const MarketingDigital = () => {
       </div>
 
       <TextImportancia>
-        <Container className="py-5 text-center">
+        <Container className="py-5 text-center" data-aos="fade-left" data-aos-duration="1000">
           <h3 style={{ color: "#87179D" }}>
             Como funciona o Processo na Agência de Marketing Digital – DDS
           </h3>
         </Container>
       </TextImportancia>
-      <div className="container">
+      <div className="container" data-aos="zoom-in" data-aos-duration="1000">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <div className="text-center">
               <img
                 src={Alinhamento}
@@ -140,7 +145,7 @@ const MarketingDigital = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="text-center">
+            <div className="text-center" data-aos="fade-right" data-aos-duration="1000">
               <img
                 src={Estrategia}
                 alt="Imagem 2"
@@ -177,7 +182,7 @@ const MarketingDigital = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <div className="text-center">
               <img
                 src={Relacionamento}
@@ -217,7 +222,7 @@ const MarketingDigital = () => {
         </div>
       </div>
 
-      <div className="form-group container mb-4 mt-5">
+      <div className="form-group container mb-4 mt-5" data-aos="flip-right" data-aos-duration="1000">
         <h2 className="text-center mt-5 mb-5" style={{ color: "#87179D" }}>
           Perguntas Frequentes
         </h2>
