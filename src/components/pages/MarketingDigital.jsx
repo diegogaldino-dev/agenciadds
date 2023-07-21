@@ -12,6 +12,11 @@ import { Card, Container } from "react-bootstrap";
 
 import mktImg from "../../img/31958.jpg";
 
+import Alinhamento from "../../img/icons/alinhamento.jpg"
+import Estrategia from "../../img/icons/estrategiapersonalizada.jpg"
+import Relacionamento from "../../img/icons/relacionamentoeresultado.jpg"
+
+
 const MarketingDigital = () => {
   const [isFirstCollapseOpen, setIsFirstCollapseOpen] = useState(false);
   const [isSecondCollapseOpen, setIsSecondCollapseOpen] = useState(false);
@@ -79,13 +84,11 @@ const MarketingDigital = () => {
                 Marketing Digital
               </TitleMark>
               <Text className="text-center text-md-left custom-text">
-                Pensou em criação de sites? Está no lugar certo! Na DDS Agência
-                de Desenvolvimento, oferecemos criação de sites profissionais,
-                personalizados, gerenciáveis e administráveis. Desenvolvemos
-                sites de verdade! Trabalhamos com empresas, profissionais
-                liberais e sites pessoais! Nossos sites são de fácil
-                atualização, permitindo que você mantenha seu conteúdo sempre
-                atualizado.
+                Na DDS Agência de Desenvolvimento, sabemos que uma presença
+                online eficaz é essencial para o crescimento dos negócios. É por
+                isso que oferecemos um conjunto abrangente de serviços de
+                marketing digital, projetados para ajudar sua marca a se
+                destacar no mundo digital.
               </Text>
             </div>
           </Container>
@@ -95,16 +98,27 @@ const MarketingDigital = () => {
       <TextImportancia>
         <Container className="py-5 text-center">
           <h3 style={{ color: "#87179D" }}>
-            Como funciona o Processo na Agência de MKT Digital – DDS
+            Como funciona o Processo na Agência de Marketing Digital – DDS
           </h3>
         </Container>
       </TextImportancia>
       <div className="container">
-        <div className="d-flex flex-wrap">
-          <div className="flex-fill">
+        <div className="row">
+          <div className="col-md-4">
             <div className="text-center">
-              Imagem ou icon
+              <img
+                src={Alinhamento}
+                alt="Imagem 1"
+                className="img-fluid"
+              />
               <h4 className="text-uppercase">Alinhamento com o Time</h4>
+              <p>
+                O primeiro passo para o sucesso é o alinhamento perfeito entre
+                as equipes de marketing e vendas. Na DDS, trabalhamos em
+                harmonia para garantir que as estratégias de marketing estejam
+                em sintonia com os objetivos de vendas, proporcionando
+                resultados reais e mensuráveis.
+              </p>
               <ul className="list-unstyled">
                 <li>
                   <span className="bullet"></span>Equilíbrio e União entre MKT e
@@ -125,50 +139,77 @@ const MarketingDigital = () => {
               </ul>
             </div>
           </div>
-          <div className="flex-fill">
+          <div className="col-md-4">
             <div className="text-center">
-              Imagem ou icon
-              <h4 className="text-uppercase">Alinhamento com o Time</h4>
+              <img
+                src={Estrategia}
+                alt="Imagem 2"
+                className="img-fluid"
+              />
+              <h4 className="text-uppercase">Estratégias Personalizadas</h4>
+              <p>
+                Na DDS, entendemos que cada cliente é único e possui
+                necessidades específicas. É por isso que nossas estratégias são
+                totalmente personalizadas, levando em consideração o perfil do
+                seu público-alvo, o setor de atuação e as metas do seu negócio.
+                Com soluções sob medida, sua marca alcançará resultados
+                surpreendentes no mundo digital.
+              </p>
               <ul className="list-unstyled">
                 <li>
-                  <span className="bullet"></span>Equilíbrio e União entre MKT e
-                  Vendas
+                  <span className="bullet"></span>Estratégias Personalizadas
+                  para cada Cliente
                 </li>
                 <li>
-                  <span className="bullet"></span>Alinhamento de MQL e SQL
+                  <span className="bullet"></span>Otimização de Mídias Sociais
                 </li>
                 <li>
-                  <span className="bullet"></span>Definição de Processos
+                  <span className="bullet"></span>Campanhas Direcionadas
                 </li>
                 <li>
-                  <span className="bullet"></span>Definição de Investimentos
+                  <span className="bullet"></span>Análise de Resultados e
+                  Ajustes
                 </li>
                 <li>
-                  <span className="bullet"></span>Metas e Desafios Encontrados
+                  <span className="bullet"></span>Maximize seu ROI com nossas
+                  Estratégias
                 </li>
               </ul>
             </div>
           </div>
-          <div className="flex-fill">
+          <div className="col-md-4">
             <div className="text-center">
-              Imagem ou icon
-              <h4 className="text-uppercase">Alinhamento com o Time</h4>
+              <img
+                src={Relacionamento}
+                alt="Imagem 3"
+                className="img-fluid"
+              />
+              <h4 className="text-uppercase">Relacionamento e Resultados</h4>
+              <p>
+                Acreditamos no poder das parcerias duradouras. Na DDS, não
+                apenas criamos estratégias, mas também nos dedicamos a construir
+                relacionamentos sólidos com nossos clientes. Estamos empenhados
+                em alcançar resultados excepcionais e acompanhamos de perto o
+                desempenho de cada ação implementada. Nossa missão é fazer parte
+                do seu sucesso e levar sua marca ao topo.
+              </p>
               <ul className="list-unstyled">
                 <li>
-                  <span className="bullet"></span>Equilíbrio e União entre MKT e
-                  Vendas
+                  <span className="bullet"></span>Construção de Relacionamentos
+                  Sólidos
                 </li>
                 <li>
-                  <span className="bullet"></span>Alinhamento de MQL e SQL
+                  <span className="bullet"></span>Acompanhamento de Resultados
                 </li>
                 <li>
-                  <span className="bullet"></span>Definição de Processos
+                  <span className="bullet"></span>Metas Alcançadas e Superadas
                 </li>
                 <li>
-                  <span className="bullet"></span>Definição de Investimentos
+                  <span className="bullet"></span>Crescimento e Impacto no
+                  Mercado
                 </li>
                 <li>
-                  <span className="bullet"></span>Metas e Desafios Encontrados
+                  <span className="bullet"></span>Seu Sucesso é o Nosso Sucesso!
                 </li>
               </ul>
             </div>
