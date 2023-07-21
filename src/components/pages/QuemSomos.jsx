@@ -40,7 +40,7 @@ const QuemSomos = () => {
       <div className="row">
         <div className="col-md-12">
           <p>
-            Fundada por Diego Galdino, programador, e Dayane Mitzy,
+            Fundada por Diego Galdino, programador, e Dayane Laura,
             especialista em Social Media, nossa empresa nasceu com o objetivo
             de atender o máximo de pessoas e empresas possível. Acreditamos que
             todas as empresas, independentemente do tamanho ou setor, merecem
