@@ -41,7 +41,7 @@ const Home = () => {
     <div>
       <CarouselHome />
       <div className="container">
-        <div className="mt-5" data-aos="zoom-in" data-aos-duration="1500">
+        <div className="mt-5" data-aos="zoom-in" data-aos-duration="2000">
           <Marquee gradient={true} speed={100}>
             <LogoImage src={ViraFesta} alt="Logo 1" />
             <LogoImage src={Polly} alt="Logo 2" />
