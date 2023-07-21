@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Carousel,
   // Card
@@ -20,7 +20,6 @@ import Template1 from "../../img/templates/Para o site DDS 1.png";
 import Template2 from "../../img/templates/Para o site DDS 2.png";
 import Template3 from "../../img/templates/Para o site DDS 3.png";
 
-
 import Cards from "./Cards/Cards";
 
 import {
@@ -31,12 +30,18 @@ import {
   // PaintBrushIcon,
 } from "./style";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <CarouselHome />
       <div className="container">
-        <div className="mt-5">
+        <div className="mt-5" data-aos="zoom-in" data-aos-duration="1500">
           <Marquee gradient={true} speed={100}>
             <LogoImage src={ViraFesta} alt="Logo 1" />
             <LogoImage src={Polly} alt="Logo 2" />
@@ -102,7 +107,13 @@ const Home = () => {
         </section>
 
         <section className="my-5">
-          <h5 className="text-center mb-4">Portfolio!</h5>
+          <h5
+            className="text-center mb-4"
+            data-aos="zoom-out-up"
+            data-aos-duration="800"
+          >
+            Portfolio!
+          </h5>
           <h1 className="text-center mb-4">Alguns trabalhos</h1>
           <Carousel>
             <Carousel.Item>
@@ -113,22 +124,14 @@ const Home = () => {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={Template2}
-                alt="Project 2"
-              />
+              <img className="d-block w-100" src={Template2} alt="Project 2" />
               <Carousel.Caption className="carousel-caption">
                 <h3>Project 2</h3>
                 <p>Project description</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={Template3}
-                alt="Project 3"
-              />
+              <img className="d-block w-100" src={Template3} alt="Project 3" />
               <Carousel.Caption className="carousel-caption">
                 <h3>Project 3</h3>
                 <p>Project description</p>

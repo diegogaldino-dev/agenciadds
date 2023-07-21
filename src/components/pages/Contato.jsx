@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { FaInstagram, FaFacebookSquare, FaWhatsapp, FaEnvelope } from "react-icons/fa";
@@ -6,7 +6,14 @@ import { ImageCont, Title, TextContatoInfo, LinkWithoutUnderline, ParagrafoDoTex
 import criacaoImg from "../../img/contato.jpg";
 import emailjs from "emailjs-com";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Contato = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
@@ -72,17 +79,17 @@ const Contato = () => {
         <div className="position-absolute top-0 start-0 mt-5">
           <div className="container">
             <div className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4">
-              <Title>Fale Conosco</Title>
+              <Title data-aos="zoom-out-up" data-aos-duration="800">Fale Conosco</Title>
             </div>
           </div>
         </div>
       </div>
       <div className="container mb-5">
-        <h2 className="mt-4">Fale com a gente!</h2>
-        <h6>Seu contato é muito importante</h6>
+        <h2 className="mt-4" data-aos="fade-up" data-aos-duration="1000">Fale com a gente!</h2>
+        <h6 data-aos="fade-up" data-aos-duration="1000">Seu contato é muito importante</h6>
         <div className="row">
           <div className="col-md-6">
-            <form className="mt-4 mb-4" onSubmit={enviarEmail}>
+            <form className="mt-4 mb-4" onSubmit={enviarEmail} data-aos="fade-up" data-aos-duration="1000">
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
                   Nome:
@@ -140,7 +147,7 @@ const Contato = () => {
             </form>
           </div>
           <div className="col-md-6">
-            <TextContatoInfo className="p-4 rounded shadow-lg">
+            <TextContatoInfo className="p-4 rounded shadow-lg" data-aos="fade-up" data-aos-duration="1000">
               <div>
                 <div className="text-center">
                   <TitleContato className="text-center mt-4 shadow-lg">Contatos</TitleContato>
