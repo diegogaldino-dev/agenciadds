@@ -17,6 +17,10 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
+import Diego from '../../img/profile/Diego Site .jpg'
+import Dayane from '../../img/profile/Dayane Site .jpg'
+
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -107,12 +111,12 @@ const QuemSomos = () => {
               <CardQuemSomos className="card shadow-lg mt-2">
                 <img
                   className="card-img-top"
-                  src="https://via.placeholder.com/300x300"
+                  src={Dayane}
                   alt="Member 1"
                   style={{ width: "300px", height: "300px" }}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Dayane M. Laura</h5>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">
                     Some quick example text to build on the card title and make
@@ -153,12 +157,12 @@ const QuemSomos = () => {
               <CardQuemSomos className="card shadow-lg mt-2">
                 <img
                   className="card-img-top"
-                  src="https://via.placeholder.com/300x300"
+                  src={Diego}
                   alt="Member 1"
                   style={{ width: "300px", height: "300px" }}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Diego G. Conceição</h5>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">
                     Some quick example text to build on the card title and make
