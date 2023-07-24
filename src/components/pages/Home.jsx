@@ -119,22 +119,22 @@ const Home = () => {
             <Carousel.Item>
               <img className="d-block w-100" src={Template1} alt="Project 1" />
               <Carousel.Caption className="carousel-caption">
-                <h3>Project 1</h3>
-                <p>Project description</p>
+                {/* <h3>Project 1</h3>
+                <p>Project description</p> */}
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-100" src={Template2} alt="Project 2" />
               <Carousel.Caption className="carousel-caption">
-                <h3>Project 2</h3>
-                <p>Project description</p>
+                {/* <h3>Project 2</h3>
+                <p>Project description</p> */}
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-100" src={Template3} alt="Project 3" />
               <Carousel.Caption className="carousel-caption">
-                <h3>Project 3</h3>
-                <p>Project description</p>
+                {/* <h3>Project 3</h3>
+                <p>Project description</p> */}
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
