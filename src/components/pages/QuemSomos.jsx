@@ -123,7 +123,7 @@ const QuemSomos = () => {
                     up the bulk of the card's content.
                   </p>
                   <SocialContainer>
-                    <SocialLink href="#">
+                    <SocialLink href="#" target="_blank" rel="noopener noreferrer">
                       <SocialIcon>
                         <FaInstagram />
                       </SocialIcon>
