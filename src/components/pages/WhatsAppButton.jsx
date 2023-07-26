@@ -32,7 +32,7 @@ const WhatsAppIcon = styled(FaWhatsapp)`
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     // Número de telefone para o qual você deseja enviar a mensagem
-    const phoneNumber = "123456789";
+    const phoneNumber = "5511978788732";
     // Mensagem que você deseja enviar
     const message = "Olá, gostaria de mais informações.";
 

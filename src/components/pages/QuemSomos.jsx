@@ -14,7 +14,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaWhatsapp,
-  FaEnvelope,
+  // FaEnvelope,
 } from "react-icons/fa";
 
 import Diego from "../../img/profile/Diego Site .jpg";
@@ -25,34 +25,30 @@ import "aos/dist/aos.css";
 
 const QuemSomos = () => {
   const handleWhatsAppClick = () => {
-    // Número de telefone para o qual você deseja enviar a mensagem
     const phoneNumber = "5511978788732";
-    // Mensagem que você deseja enviar
     const message = "Oi Day Gostaria de mais informações.";
-
-    // Gerar a URL do WhatsApp com o número de telefone e a mensagem
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       message
     )}`;
-
-    // Abrir o WhatsApp em uma nova janela ou guia
     window.open(whatsappUrl, "_blank");
   };
 
   const handleWhatsdiegoAppClick = () => {
-    // Número de telefone para o qual você deseja enviar a mensagem
     const phoneNumber = "5511978788732";
-    // Mensagem que você deseja enviar
     const message = "Oi Diego Gostaria de mais informações.";
-
-    // Gerar a URL do WhatsApp com o número de telefone e a mensagem
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       message
     )}`;
-
-    // Abrir o WhatsApp em uma nova janela ou guia
     window.open(whatsappUrl, "_blank");
   };
+
+  // const handleEmailClick = () => {
+  //   const emailAddress = "contato@ddsdesenvolvimento.com.br"; // Coloque o endereço de e-mail que deseja usar
+  //   const subject = "Assunto da mensagem"; // Coloque o assunto da mensagem
+  //   const emailUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
+  //   window.open(emailUrl, "_blank");
+  // };
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -195,11 +191,11 @@ const QuemSomos = () => {
                         <FaWhatsapp />
                       </SocialIcon>
                     </SocialLink>
-                    <SocialLink href="#">
+                    {/* <SocialLink href="mailto:contato@ddsdesenvolvimento.com.br">
                       <SocialIcon>
                         <FaEnvelope />
                       </SocialIcon>
-                    </SocialLink>
+                    </SocialLink> */}
                   </SocialContainer>
                 </div>
               </CardQuemSomos>
@@ -216,7 +212,7 @@ const QuemSomos = () => {
                 <div className="card-body">
                   <h5 className="card-title">Diego G. Conceição</h5>
                   <h5 className="card-title">
-                    Gerente de Projetos e Desenvolvedor WEB                    
+                    Gerente de Projetos e Desenvolvedor WEB
                   </h5>
                   <p className="card-text">
                     Desenvolvedor Web apaixonado por tecnologia e programação.
@@ -224,17 +220,29 @@ const QuemSomos = () => {
                     resultados e soluções inovadoras.
                   </p>
                   <SocialContainer>
-                    <SocialLink href="#">
+                    <SocialLink
+                      href="https://instagram.com/diego_ghaldino?igshid=MzNlNGNkZWQ4Mg=="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <SocialIcon>
                         <FaInstagram />
                       </SocialIcon>
                     </SocialLink>
-                    <SocialLink href="#">
+                    <SocialLink
+                      href="https://www.facebook.com/diego.galdino.54?mibextid=ZbWKwL"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <SocialIcon>
                         <FaFacebook />
                       </SocialIcon>
                     </SocialLink>
-                    <SocialLink href="#">
+                    <SocialLink
+                      href="https://www.linkedin.com/in/diego-galdinoc"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <SocialIcon>
                         <FaLinkedin />
                       </SocialIcon>
@@ -244,11 +252,11 @@ const QuemSomos = () => {
                         <FaWhatsapp />
                       </SocialIcon>
                     </SocialLink>
-                    <SocialLink href="#">
+                    {/* <SocialLink onClick={handleEmailClick}>
                       <SocialIcon>
                         <FaEnvelope />
                       </SocialIcon>
-                    </SocialLink>
+                    </SocialLink> */}
                   </SocialContainer>
                 </div>
               </CardQuemSomos>
