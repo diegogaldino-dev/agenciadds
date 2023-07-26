@@ -262,6 +262,7 @@ export const SocialLink = styled.a`
   background-color: violet;
   color: white;
   margin-right: 10px;
+  cursor: pointer;
 `;
 
 export const SocialIcon = styled.div`

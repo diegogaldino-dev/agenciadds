@@ -24,6 +24,35 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const QuemSomos = () => {
+  const handleWhatsAppClick = () => {
+    // Número de telefone para o qual você deseja enviar a mensagem
+    const phoneNumber = "5511978788732";
+    // Mensagem que você deseja enviar
+    const message = "Oi Day Gostaria de mais informações.";
+
+    // Gerar a URL do WhatsApp com o número de telefone e a mensagem
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+
+    // Abrir o WhatsApp em uma nova janela ou guia
+    window.open(whatsappUrl, "_blank");
+  };
+
+  const handleWhatsdiegoAppClick = () => {
+    // Número de telefone para o qual você deseja enviar a mensagem
+    const phoneNumber = "5511978788732";
+    // Mensagem que você deseja enviar
+    const message = "Oi Diego Gostaria de mais informações.";
+
+    // Gerar a URL do WhatsApp com o número de telefone e a mensagem
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+
+    // Abrir o WhatsApp em uma nova janela ou guia
+    window.open(whatsappUrl, "_blank");
+  };
   useEffect(() => {
     AOS.init();
   }, []);
@@ -125,15 +154,17 @@ const QuemSomos = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">Dayane M. Laura</h5>
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">
+                    Gerente de Marketing e Redes Sociais
+                  </h5>
                   <p className="card-text">
-                    Day, apaixonada por marketing, com 10 anos de
-                    experiência em RH, mídias sociais e campanhas de tráfego,
-                    foco em resultados mensuráveis.
+                    Day, apaixonada por marketing, com 10 anos de experiência em
+                    RH, mídias sociais e campanhas de tráfego, foco em
+                    resultados mensuráveis.
                   </p>
                   <SocialContainer>
                     <SocialLink
-                      href="#"
+                      href="https://www.instagram.com/day_tico/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -141,17 +172,25 @@ const QuemSomos = () => {
                         <FaInstagram />
                       </SocialIcon>
                     </SocialLink>
-                    <SocialLink href="#">
+                    <SocialLink
+                      href="https://www.facebook.com/diana.cucanhoto"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <SocialIcon>
                         <FaFacebook />
                       </SocialIcon>
                     </SocialLink>
-                    <SocialLink href="#">
+                    <SocialLink
+                      href="https://www.linkedin.com/in/dayane-m-laura-65b803192/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <SocialIcon>
                         <FaLinkedin />
                       </SocialIcon>
                     </SocialLink>
-                    <SocialLink href="#">
+                    <SocialLink onClick={handleWhatsAppClick}>
                       <SocialIcon>
                         <FaWhatsapp />
                       </SocialIcon>
@@ -176,7 +215,9 @@ const QuemSomos = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">Diego G. Conceição</h5>
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">
+                    Gerente de Projetos e Desenvolvedor WEB                    
+                  </h5>
                   <p className="card-text">
                     Desenvolvedor Web apaixonado por tecnologia e programação.
                     15 anos de experiência em diversas linguagens. Foco em
@@ -198,7 +239,7 @@ const QuemSomos = () => {
                         <FaLinkedin />
                       </SocialIcon>
                     </SocialLink>
-                    <SocialLink href="#">
+                    <SocialLink onClick={handleWhatsdiegoAppClick}>
                       <SocialIcon>
                         <FaWhatsapp />
                       </SocialIcon>
