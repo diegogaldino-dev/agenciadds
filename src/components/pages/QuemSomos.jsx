@@ -127,7 +127,7 @@ const QuemSomos = () => {
                   <h5 className="card-title">Dayane M. Laura</h5>
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">
-                    Day, gestora apaixonada por marketing, com 15 anos de
+                    Day, apaixonada por marketing, com 10 anos de
                     experiência em RH, mídias sociais e campanhas de tráfego,
                     foco em resultados mensuráveis.
                   </p>
