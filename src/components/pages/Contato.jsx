@@ -56,7 +56,7 @@ const Contato = () => {
 
   const handleWhatsappClick = () => {
     const phoneNumber = "5511978788732";
-    const message = "Oi Day Gostaria de mais informações.";
+    const message = "Oi Gostaria de mais informações.";
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       message
     )}`;
