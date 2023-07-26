@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { FaInstagram, FaFacebookSquare, FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import { ImageCont, Title, TextContatoInfo, LinkWithoutUnderline, ParagrafoDoTextcolorContato, TitleContato } from "./style";
+import { ImageCont, Title, TextContatoInfo, LinkWithoutUnderline, LinkWithoutUnderlinewhats, ParagrafoDoTextcolorContato, TitleContato } from "./style";
 import criacaoImg from "../../img/contato.jpg";
 import emailjs from "emailjs-com";
 
@@ -55,11 +55,12 @@ const Contato = () => {
   };
 
   const handleWhatsappClick = () => {
-    // Lógica para abrir o WhatsApp
-  };
-
-  const handleEmailClick = () => {
-    // Lógica para abrir o email
+    const phoneNumber = "5511978788732";
+    const message = "Oi Day Gostaria de mais informações.";
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -153,19 +154,17 @@ const Contato = () => {
                   <TitleContato className="text-center mt-4 shadow-lg">Contatos</TitleContato>
                 </div>
                 <ParagrafoDoTextcolorContato className="mr-3 text-white">
-                  <LinkWithoutUnderline
-                    className="text-white shadow-lg"
-                    href="https://api.whatsapp.com/numero-do-whatsapp"
+                  <LinkWithoutUnderlinewhats
+                    className="text-white shadow-lg"                    
                     onClick={handleWhatsappClick}
                   >
                     <FaWhatsapp className="mr-4" /> Whatsapp (Comercial)
-                  </LinkWithoutUnderline>
+                  </LinkWithoutUnderlinewhats>
                 </ParagrafoDoTextcolorContato>
                 <ParagrafoDoTextcolorContato>
                   <LinkWithoutUnderline
                     className="text-white shadow-lg"
-                    href="mailto:contato@ddsdesenvolvimento.com.br"
-                    onClick={handleEmailClick}
+                    href="mailto:contato@ddsdesenvolvimento.com.br"                  
                   >
                     <FaEnvelope className="mr-4 text-white" /> contato@ddsdesenvolvimento.com.br
                   </LinkWithoutUnderline>
@@ -173,7 +172,7 @@ const Contato = () => {
 
                 <ul className="list-unstyled d-flex flex-row justify-content-center">
                   <li>
-                    <a className="text-white px-2" href="#!">
+                    <a className="text-white px-2" href="https://www.facebook.com/profile.php?id=100093569524691&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                       <div
                         className="rounded-circle bg-white d-flex align-items-center justify-content-center shadow-lg"
                         style={{ width: "40px", height: "40px" }}
@@ -183,7 +182,7 @@ const Contato = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="text-white px-2" href="#!">
+                    <a className="text-white px-2" href="https://www.instagram.com/dds_desenvolvimento/" target="_blank" rel="noopener noreferrer">
                       <div
                         className="rounded-circle bg-white d-flex align-items-center justify-content-center shadow-lg"
                         style={{

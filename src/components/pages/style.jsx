@@ -215,7 +215,15 @@ export const LinkWithoutUnderline = styled.a`
   background-color: rgb(135, 23, 157);
   padding: 5px 10px;
   border-radius: 8px;
+`
+
+export const LinkWithoutUnderlinewhats = styled.a`
+  text-decoration: none;  
+  background-color: rgb(135, 23, 157);
+  padding: 5px 10px;
+  border-radius: 8px;
   backdrop-filter: blur(10px);
+  cursor: pointer;
 `
 
 export const ParagrafoDoTextcolorContato = styled.p`
