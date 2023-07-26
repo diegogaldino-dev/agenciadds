@@ -3,11 +3,11 @@ import { StyledFooter, LinkWithoutUnderline } from "./style";
 import {
   FaFacebookSquare,
   FaInstagram,
-  FaPhone,
   FaEnvelope,
   FaCode,
   FaMobileAlt,
   FaPalette,
+  FaWhatsapp
 } from "react-icons/fa";
 import { TiGroup } from "react-icons/ti";
 // import { BsFillChatDotsFill } from "react-icons/bs";
@@ -98,11 +98,11 @@ function Footer() {
             <h5 className="mb-4">Contato</h5>
             <ul className="list-unstyled">
               <li className="d-flex align-items-center mb-3">
-                <FaPhone size={20} className="pe-2" />
-                <p className="mb-0">+01 234 567 89</p>
+                <FaWhatsapp size={25} className="pe-2" />
+                <p className="mb-0">(11) 97878-8732</p>
               </li>
               <li className="d-flex align-items-center">
-                <FaEnvelope size={20} className="pe-2 mb-0" />
+                <FaEnvelope size={25} className="pe-2 mb-0" />
                 <p className="mb-0">contato@ddsdesenvolvimento.com.br</p>
               </li>
             </ul>
