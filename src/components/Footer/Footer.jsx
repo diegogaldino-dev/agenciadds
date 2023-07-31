@@ -17,6 +17,20 @@ import { Link } from "react-router-dom";
 import Logo from "../../img/logo_oficial 1.svg";
 
 function Footer() {
+  const handleWhatsAppClick = () => {
+    // Número de telefone para o qual você deseja enviar a mensagem
+    const phoneNumber = "5511978788732";
+    // Mensagem que você deseja enviar
+    const message = "Olá, gostaria faz um orçamento.";
+
+    // Gerar a URL do WhatsApp com o número de telefone e a mensagem
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+
+    // Abrir o WhatsApp em uma nova janela ou guia
+    window.open(whatsappUrl, "_blank");
+  };
   return (
     <StyledFooter className="text-center text-lg-start">
       <div className="container p-4">
@@ -60,7 +74,7 @@ function Footer() {
                 </LinkWithoutUnderline>
               </li> */}
               <li className="mb-2">
-                <LinkWithoutUnderline as={Link} to="/orcamento" className="text-white">
+                <LinkWithoutUnderline className="text-white" onClick={handleWhatsAppClick}>
                   <ImCalculator />
                   <span className="pe-3" />
                   Orçamento
