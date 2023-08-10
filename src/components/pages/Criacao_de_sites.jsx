@@ -23,7 +23,7 @@ const Criacao_de_sites = () => {
     const mensagem = encodeURIComponent(
       "Olá, gostaria de solicitar um orçamento."
     );
-    const numeroWhatsApp = "SEU_NUMERO_WHATSAPP";
+    const numeroWhatsApp = "5511978788732";
 
     window.open(`https://wa.me/${numeroWhatsApp}?text=${mensagem}`);
   };
