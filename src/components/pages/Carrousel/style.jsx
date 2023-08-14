@@ -32,7 +32,7 @@ export const CarouselCaption = styled.div`
 export const CarouselTitle = styled.h3`
   font-size: 24px;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.5);
   color: #000000;
 
   @media (max-width: 576px) {
