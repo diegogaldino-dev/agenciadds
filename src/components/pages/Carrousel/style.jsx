@@ -21,6 +21,7 @@ export const CarouselCaption = styled.div`
     color: #000000;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
     background: linear-gradient(rgba(182, 31, 252, 0.5), rgba(206, 125, 243, 0.5)); /* Gradiente de fundo para destacar o texto */
+    border-radius: 15px;
 
     @media (max-width: 576px) {
       padding: 10px; /* Reduzindo o padding para telas menores */
