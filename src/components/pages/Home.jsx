@@ -76,6 +76,7 @@ const Home = () => {
                   image={Desen}
                   alt=""
                   description="Transforme sua presença online com um site profissional e responsivo. Oferecemos serviços de desenvolvimento de sites sob medida para atender às suas necessidades específicas. Além disso, também realizamos atualizações em websites existentes, garantindo que sua presença digital esteja sempre atualizada e otimizada."
+                  categoryLink="/criacao-de-sites" // Defina o link da categoria correspondente
                 />
               </div>
               <div
@@ -88,6 +89,8 @@ const Home = () => {
                   image={marketing}
                   alt=""
                   description="Potencialize sua marca online com estratégias de marketing digital personalizadas. Oferecemos soluções completas e inovadoras em SEO, mídias sociais, anúncios e muito mais para impulsionar seu negócio. Mantenha sua presença digital atualizada, otimizada, competitiva e impactante com nossos serviços especializados e eficientes."
+                  categoryLink="/marketing-digital" // Defina o link da categoria correspondente
+
                 />
               </div>
               <div
@@ -100,6 +103,8 @@ const Home = () => {
                   image={social}
                   alt=""
                   description="Aumente sua visibilidade online com estratégias personalizadas e eficientes. Oferecemos soluções inovadoras em design, SEO, mídias sociais e mais para alavancar sua marca de forma impressionante. Atualize e otimize consistentemente e proativamente sua presença digital com nossos serviços especializados e profissionais."
+                  categoryLink="/social-midia" // Defina o link da categoria correspondente
+
                 />
               </div>
             </div>
