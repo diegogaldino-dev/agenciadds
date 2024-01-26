@@ -17,8 +17,8 @@ import {
   // FaEnvelope,
 } from "react-icons/fa";
 
-import Diego from "../../img/profile/Diego Site .jpg";
-import Dayane from "../../img/profile/Dayane Site .jpg";
+import Diego from "../../img/profile/Diego Site .png";
+import Dayane from "../../img/profile/Dayane Site .png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
