@@ -45,11 +45,11 @@ const Home = () => {
     script1.onload = () => {
       const script2 = document.createElement("script");
       script2.innerHTML = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-RHJ8R95WMZ');
-      `;
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RHJ8R95WMZ');
+  `;
       document.head.appendChild(script2);
     };
   }, []);
