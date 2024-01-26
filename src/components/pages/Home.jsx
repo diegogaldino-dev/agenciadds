@@ -37,18 +37,20 @@ const Home = () => {
   useEffect(() => {
     AOS.init();
     // Adicione o código de rastreamento do Google Analytics aqui
-    const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-RHJ8R95WMZ"; // Substitua pelo seu ID de rastreamento
-    script.async = true;
-    document.head.appendChild(script);
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-RHJ8R95WMZ";
+    document.head.appendChild(script1);
 
-    script.onload = () => {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-RHJ8R95WMZ"); // Substitua pelo seu ID de rastreamento
+    script1.onload = () => {
+      const script2 = document.createElement("script");
+      script2.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RHJ8R95WMZ');
+      `;
+      document.head.appendChild(script2);
     };
   }, []);
   return (
