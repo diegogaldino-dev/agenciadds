@@ -28,8 +28,11 @@ const NavBar = () => {
         </div>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-        <Nav>
+      <Navbar.Collapse
+        id="basic-navbar-nav"
+        className="justify-content-center justify-content-lg-end"
+      >
+        <Nav className="text-center">
           <Nav.Link as={Link} to="/">
             <TextContainer>Inicio</TextContainer>
           </Nav.Link>
@@ -40,7 +43,11 @@ const NavBar = () => {
             <TextContainer>Contato</TextContainer>
           </Nav.Link>
           <StyledNavDropdown title="Tipos de Serviços" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} alt="Criação de Sites" to="/criacao-de-sites">
+            <NavDropdown.Item
+              as={Link}
+              alt="Criação de Sites"
+              to="/criacao-de-sites"
+            >
               Criação de Sites
             </NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/marketing-digital">
@@ -51,13 +58,27 @@ const NavBar = () => {
             </NavDropdown.Item>
           </StyledNavDropdown>
         </Nav>
-        <Nav className="ml-auto" style={{ paddingRight: "10px" }}>
-          <Nav.Link href="https://www.facebook.com/profile.php?id=100093569524691&mibextid=ZbWKwL" target="_blank">
-            <FaFacebook color="#fff" />
-          </Nav.Link>
-          <Nav.Link href="https://www.instagram.com/dds_desenvolvimento/" target="_blank">
-            <FaInstagram color="#fff" />
-          </Nav.Link>
+        <Nav
+          className="ml-auto d-flex align-items-center"
+          style={{ paddingRight: "20px" }}
+        >
+          <div className="d-flex align-items-center">
+            <Nav.Link
+              href="https://www.facebook.com/profile.php?id=100093569524691&mibextid=ZbWKwL"
+              target="_blank"
+              className="flex-row"
+              style={{ marginRight: "10px" }}
+            >
+              <FaFacebook color="#fff" style={{ fontSize: "24px" }} />
+            </Nav.Link>
+            <Nav.Link
+              href="https://www.instagram.com/dds_desenvolvimento/"
+              target="_blank"
+              className="flex-row"
+            >
+              <FaInstagram color="#fff" style={{ fontSize: "24px" }} />
+            </Nav.Link>
+          </div>
         </Nav>
       </Navbar.Collapse>
     </StyledNavbar>
