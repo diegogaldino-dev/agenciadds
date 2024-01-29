@@ -111,20 +111,27 @@ function Footer() {
           <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 className="mb-4">Contato</h5>
             <ul className="list-unstyled">
-              <li className="d-flex align-items-center mb-3">
-                <FaWhatsapp size={25} className="pe-2" />
-                <p className="mb-0">(11) 97878-8732</p>
+            <li className="mb-2">
+                <LinkWithoutUnderline className="text-white">
+                  <FaWhatsapp size={20} />
+                  <span className="pe-3" />
+                  (11) 97878-8732
+                </LinkWithoutUnderline>
               </li>
-              <li className="d-flex align-items-center">
-                <FaEnvelope size={25} className="pe-2 mb-0" />
-                <p className="mb-0">contato@ddsdesenvolvimento.com.br</p>
-              </li>
+
+              <li className="mb-2">
+                <LinkWithoutUnderline as={Link} to="/social-midia" className="text-white">
+                  <FaEnvelope size={20} />
+                  <span className="pe-2" />
+                  contato@ddsdesenvolvimento.com.br
+                </LinkWithoutUnderline>
+              </li>             
             </ul>
           </div>
         </div>
       </div>
       <div className="text-center p-3" style={{ backgroundColor: "#000" }}>
-        DDS - Agência de Desenvolvimento © 2023 Todos os direitos reservados.
+        DDS - Agência de Desenvolvimento &copy; {new Date().getFullYear()} Todos os direitos reservados.
       </div>
     </StyledFooter>
   );
