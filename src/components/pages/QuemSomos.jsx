@@ -140,13 +140,13 @@ const QuemSomos = () => {
         <h2>Nossa Equipe</h2>
         <ContainerCards className="card-container">
           <div className="row">
-            <div className="col-md-6">
-              <CardQuemSomos className="card shadow-lg mt-2">
+            <div className="col-12 col-md-6 mx-auto">
+              <CardQuemSomos className="card shadow-lg mt-2 mx-auto">
                 <img
                   className="card-img-top"
                   src={Dayane}
                   alt="Member 1"
-                  style={{ width: "300px", height: "300px" }}
+                  style={{ width: "299px", height: "300px" }}
                 />
                 <div className="card-body">
                   <h5 className="card-title">Dayane M. Laura</h5>
@@ -201,13 +201,13 @@ const QuemSomos = () => {
               </CardQuemSomos>
             </div>
 
-            <div className="col-md-6">
-              <CardQuemSomos className="card shadow-lg mt-2">
+            <div className="col-12 col-md-6 mx-auto">
+              <CardQuemSomos className="card shadow-lg mt-2 mx-auto">
                 <img
                   className="card-img-top"
                   src={Diego}
                   alt="Member 1"
-                  style={{ width: "300px", height: "300px" }}
+                  style={{ width: "299px", height: "300px" }}
                 />
                 <div className="card-body">
                   <h5 className="card-title">Diego G. Conceição</h5>

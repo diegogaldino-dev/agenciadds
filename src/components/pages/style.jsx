@@ -252,6 +252,10 @@ export const ContainerCards = styled.div`
 export const CardQuemSomos = styled.div`
   width: 300px;
   margin-right: 30px;
+  @media (min-width: 768px) {
+    /* Estilos específicos para telas maiores que 768 pixels (tablets e desktops) */
+    margin-left: 30px; /* Restaura a largura fixa para telas maiores */
+  }
 `
 
 export const SocialContainer = styled.div`
