@@ -154,7 +154,7 @@ const QuemSomos = () => {
                     Gerente de Marketing e Redes Sociais
                   </h5>
                   <p className="card-text">
-                    Day, apaixonada por marketing, com 10 anos de experiência em
+                    Day, atuando em marketing, com 10 anos de experiência em
                     RH, mídias sociais e campanhas de tráfego, foco em
                     resultados mensuráveis.
                   </p>
