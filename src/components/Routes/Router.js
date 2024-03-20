@@ -9,6 +9,7 @@ import QuemSomos from "../pages/QuemSomos"
 import SocialMedia from '../pages/SocialMedia'
 import MarketingDigital from '../pages/MarketingDigital'
 import WhatsAppButton from '../pages/WhatsAppButton'
+import Tipo_servico from "../pages/Tipo_servico";
 
 // Navbar e Footer
 import Navbar from "../Navbar/Navbar";
@@ -26,6 +27,7 @@ const Router = () => {
           <Route exact path="/quem-somos" element={<QuemSomos />} />  
           <Route exact path="/social-midia" element={<SocialMedia />} /> 
           <Route exact path="/marketing-digital" element={<MarketingDigital />} />   
+          <Route exact path="/tipo-servico" element={<Tipo_servico />} />   
         </Routes>
         <WhatsAppButton />
         <Footer />

@@ -4,6 +4,9 @@ import { FaCode, FaMobileAlt, FaPalette } from 'react-icons/fa';
 import Imagetec from '../../img/conceito-de.jpg'
 import backimage from '../../img/19198948.jpg'
 
+import backgroundImage from '../../img/bgcolor.jpg'
+
+import ReactPlayer from "react-player";
 
 import contatoRedes from '../../img/2456059.jpg'
 
@@ -304,4 +307,18 @@ export const CollapseOpen = styled.span`
   padding-top: 8px;
   padding-right: 5px;
   cursor: pointer;
+`
+
+export const StyledTipo = styled.div`
+  font-family: "Roboto Slab", sans-serif;
+  background-image: url(${backgroundImage});
+  object-fit: cover;
+  color: #fff;
+`;
+
+export const Backgroud = styled.span`
+  background-color: black;
+  position: absolute;
+    height: 100%;
+    width: 100%;
 `
