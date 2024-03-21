@@ -31,6 +31,12 @@ function Footer() {
     // Abrir o WhatsApp em uma nova janela ou guia
     window.open(whatsappUrl, "_blank");
   };
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <StyledFooter className="text-center text-lg-start">
       <div className="container p-4">
@@ -60,7 +66,7 @@ function Footer() {
             <h5 className="mb-4">A Agência</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <LinkWithoutUnderline as={Link} to="/quem-somos" className="text-white">
+                <LinkWithoutUnderline onClick={handleScrollToTop} as={Link} to="/quem-somos" className="text-white">
                   <TiGroup />
                   <span className="pe-3" />
                   Quem Somos
@@ -86,21 +92,21 @@ function Footer() {
             <h5 className="mb-4">Soluções</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <LinkWithoutUnderline as={Link} to="/criacao-de-sites" className="text-white">
+                <LinkWithoutUnderline onClick={handleScrollToTop} as={Link} to="/criacao-de-sites" className="text-white">
                   <FaCode />
                   <span className="pe-3" />
                   Criação de sites
                 </LinkWithoutUnderline>
               </li>
               <li className="mb-2">
-                <LinkWithoutUnderline as={Link} to="/marketing-digital" className="text-white">
+                <LinkWithoutUnderline onClick={handleScrollToTop} as={Link} to="/marketing-digital" className="text-white">
                   <FaMobileAlt />
                   <span className="pe-3" />
                   Marketing Digital
                 </LinkWithoutUnderline>
               </li>
               <li className="mb-2">
-                <LinkWithoutUnderline as={Link} to="/social-midia" className="text-white">
+                <LinkWithoutUnderline onClick={handleScrollToTop} as={Link} to="/social-midia" className="text-white">
                   <FaPalette />
                   <span className="pe-3" />
                   Social Mídia
