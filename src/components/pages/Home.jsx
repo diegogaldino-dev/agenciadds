@@ -12,9 +12,9 @@ import Allblocks from "../../img/parceiros/all.png";
 import Kiterapias from "../../img/parceiros/ki.png";
 import SerralheriaJarim from "../../img/parceiros/serralheria.png";
 
-import Template1 from "../../img/templates/Para o site DDS 1.png";
-import Template2 from "../../img/templates/Para o site DDS 2.png";
-import Template3 from "../../img/templates/Para o site DDS 3.png";
+import Template1 from "../../img/templates/1.png";
+import Template2 from "../../img/templates/2.png";
+import Template3 from "../../img/templates/3.png";
 
 import Tipo from "../pages/Tipo_servico";
 
