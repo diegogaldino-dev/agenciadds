@@ -6,8 +6,6 @@ import backimage from '../../img/19198948.jpg'
 
 import backgroundImage from '../../img/bgcolor.jpg'
 
-import ReactPlayer from "react-player";
-
 import contatoRedes from '../../img/2456059.jpg'
 
 export const LogoImage = styled.img`

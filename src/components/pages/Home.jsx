@@ -16,11 +16,10 @@ import Template1 from "../../img/templates/1.png";
 import Template2 from "../../img/templates/2.png";
 import Template3 from "../../img/templates/3.png";
 
-import Tipo from "../pages/Tipo_servico";
-
+import Tipo from "./TipoServico";
 
 import {
-  LogoImage,  
+  LogoImage,
   // GlobeIcon,
   // PaintBrushIcon,
 } from "./style";
@@ -63,7 +62,6 @@ const Home = () => {
             {/* Add more logos here */}
           </Marquee>
         </div>
-        
       </div>
       <Tipo />
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { ImagemCarrousel, CarouselCaption, CarouselTitle, CarouselText } from "./style";
+import { ImagemCarrousel,} from "./style";
 
 import Imagem1 from "../../../img/slide/c2.png";
 import Imagem2 from "../../../img/slide/s.png";

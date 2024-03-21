@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // pages
-import Home from '../pages/Home';
+import Home from "../pages/Home";
 import CriacaoDeSites from "../pages/Criacao_de_sites";
-import Contato from '../pages/Contato'
-import QuemSomos from "../pages/QuemSomos"
-import SocialMedia from '../pages/SocialMedia'
-import MarketingDigital from '../pages/MarketingDigital'
-import WhatsAppButton from '../pages/WhatsAppButton'
-import Tipo_servico from "../pages/Tipo_servico";
+import Contato from "../pages/Contato";
+import QuemSomos from "../pages/QuemSomos";
+import SocialMedia from "../pages/SocialMedia";
+import MarketingDigital from "../pages/MarketingDigital";
+import WhatsAppButton from "../pages/WhatsAppButton";
+import TipoServico from "../pages/TipoServico";
 
 // Navbar e Footer
 import Navbar from "../Navbar/Navbar";
@@ -21,13 +21,17 @@ const Router = () => {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />} /> 
-          <Route exact path="/criacao-de-sites" element={<CriacaoDeSites />} />   
-          <Route exact path="/contato" element={<Contato />} />   
-          <Route exact path="/quem-somos" element={<QuemSomos />} />  
-          <Route exact path="/social-midia" element={<SocialMedia />} /> 
-          <Route exact path="/marketing-digital" element={<MarketingDigital />} />   
-          <Route exact path="/tipo-servico" element={<Tipo_servico />} />   
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/criacao-de-sites" element={<CriacaoDeSites />} />
+          <Route exact path="/contato" element={<Contato />} />
+          <Route exact path="/quem-somos" element={<QuemSomos />} />
+          <Route exact path="/social-midia" element={<SocialMedia />} />
+          <Route
+            exact
+            path="/marketing-digital"
+            element={<MarketingDigital />}
+          />
+          <Route exact path="/tipo-servico" element={<TipoServico />} />
         </Routes>
         <WhatsAppButton />
         <Footer />
