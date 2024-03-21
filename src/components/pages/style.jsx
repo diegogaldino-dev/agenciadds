@@ -320,3 +320,17 @@ export const Backgroud = styled.span`
     height: 100%;
     width: 100%;
 `
+
+export const CustomButton = styled.button`
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #993399;
+  }
+`;

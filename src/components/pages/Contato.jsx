@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { FaInstagram, FaFacebookSquare, FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import { ImageCont, Title, TextContatoInfo, LinkWithoutUnderline, LinkWithoutUnderlinewhats, ParagrafoDoTextcolorContato, TitleContato } from "./style";
+import { ImageCont,
+  //  Title,
+    TextContatoInfo, LinkWithoutUnderline, LinkWithoutUnderlinewhats, ParagrafoDoTextcolorContato, TitleContato } from "./style";
 import criacaoImg from "../../img/contato.png";
 import emailjs from "emailjs-com";
 

@@ -10,14 +10,14 @@ const Cards = ({ name, image, description, categoryLink }) => {
         <Card.Title>{name}</Card.Title>
         <Card.Text>{description}</Card.Text>
         <div className="text-center">
-        <StyledSaibaMaisButton
-  to={categoryLink}
-  onClick={() => {
-    window.scrollTo(0, 0);
-  }}
->
-  Saiba Mais
-</StyledSaibaMaisButton>
+          <StyledSaibaMaisButton
+            to={categoryLink}
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            Saiba Mais
+          </StyledSaibaMaisButton>
         </div>
       </Card.Body>
     </Card>

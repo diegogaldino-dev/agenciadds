@@ -1,13 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import QuemsomosImg from "../../img/QuemSomos.png";
 import {
   ImageQuemSomos,
-  Title,
+  // Title,
   ContainerCards,
   CardQuemSomos,
   SocialContainer,
   SocialLink,
   SocialIcon,
+  CustomButton,
 } from "./style";
 import {
   FaFacebook,
@@ -24,6 +25,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const QuemSomos = () => {
+  const [isFront, setIsFront] = useState(true);
+  const [isFront1, setIsFront1] = useState(true);
+
+
+  const handleClick = () => {
+    setIsFront(!isFront);    
+  };
+  const handleClick1 = () => {
+    setIsFront1(!isFront1);    
+  };
+
   const handleWhatsAppClick = () => {
     const phoneNumber = "5511978788732";
     const message = "Oi Day Gostaria de mais informações.";
@@ -139,8 +151,7 @@ const QuemSomos = () => {
       >
         <h2>Nossa Equipe</h2>
         <ContainerCards className="card-container">
-          <div className="row">
-            
+          <div className="row">          
             <div className="col-12 col-md-6 mx-auto">
               <CardQuemSomos className="card shadow-lg mt-2 mx-auto">
                 <img
@@ -149,17 +160,29 @@ const QuemSomos = () => {
                   alt="Member 1"
                   style={{ width: "299px", height: "300px" }}
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Dayane M. Laura</h5>
-                  <h5 className="card-title">
-                    Gerente de Marketing e Redes Sociais
-                  </h5>
-                  <p className="card-text">
-                    Day, atuando em marketing, com 10 anos de experiência em
-                    RH, mídias sociais e campanhas de tráfego, foco em
-                    resultados mensuráveis.
-                  </p>
-                  <SocialContainer>
+                {isFront ? (
+                  <div className="card-body">
+                    <h5 className="card-title">Dayane M. Laura</h5>
+                    <h5 className="card-title">
+                      Gerente de Marketing e Redes Sociais
+                    </h5>
+                    <div className="d-flex justify-content-center">
+                      <CustomButton onClick={handleClick}>
+                        Saiba Mais
+                      </CustomButton>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="card-body">
+                    <h4 class="font-weight-bold mb-0">Sobre Mim</h4>
+                    <hr />
+                    <p className="card-text">
+                      Day, atuando em marketing, com 10 anos de experiência em RH,
+                      mídias sociais e campanhas de tráfego, foco em resultados
+                      mensuráveis.
+                    </p>
+                    <hr />
+                    <SocialContainer>
                     <SocialLink
                       href="https://www.instagram.com/day_tico/"
                       target="_blank"
@@ -192,13 +215,15 @@ const QuemSomos = () => {
                         <FaWhatsapp />
                       </SocialIcon>
                     </SocialLink>
-                    {/* <SocialLink href="mailto:contato@ddsdesenvolvimento.com.br">
-                      <SocialIcon>
-                        <FaEnvelope />
-                      </SocialIcon>
-                    </SocialLink> */}
                   </SocialContainer>
-                </div>
+
+                    <div className="d-flex justify-content-center mt-3">
+                      <CustomButton onClick={handleClick}>
+                        Voltar
+                      </CustomButton>
+                    </div>
+                  </div>
+                )}
               </CardQuemSomos>
             </div>
 
@@ -210,56 +235,75 @@ const QuemSomos = () => {
                   alt="Member 1"
                   style={{ width: "299px", height: "300px" }}
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Diego G. Conceição</h5>
-                  <h5 className="card-title">
-                    Gerente de Projetos e Desenvolvedor WEB
-                  </h5>
-                  <p className="card-text">
-                    Desenvolvedor Web apaixonado por tecnologia e programação.
-                    15 anos de experiência em diversas linguagens. Foco em
-                    resultados e soluções inovadoras.
-                  </p>
-                  <SocialContainer>
-                    <SocialLink
-                      href="https://instagram.com/diego_ghaldino?igshid=MzNlNGNkZWQ4Mg=="
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SocialIcon>
-                        <FaInstagram />
-                      </SocialIcon>
-                    </SocialLink>
-                    <SocialLink
-                      href="https://www.facebook.com/diego.galdino.54?mibextid=ZbWKwL"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SocialIcon>
-                        <FaFacebook />
-                      </SocialIcon>
-                    </SocialLink>
-                    <SocialLink
-                      href="https://www.linkedin.com/in/diego-galdinoc"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SocialIcon>
-                        <FaLinkedin />
-                      </SocialIcon>
-                    </SocialLink>
-                    <SocialLink onClick={handleWhatsdiegoAppClick}>
-                      <SocialIcon>
-                        <FaWhatsapp />
-                      </SocialIcon>
-                    </SocialLink>
-                    {/* <SocialLink onClick={handleEmailClick}>
+                {isFront1 ? (
+                  <div className="card-body">
+                    <h5 className="card-title">Diego G. Conceição</h5>
+                    <h5 className="card-title">
+                      Gerente de Projetos e Desenvolvedor WEB
+                    </h5>
+                    <div className="d-flex justify-content-center">
+                      <CustomButton onClick={handleClick1}>
+                        Saiba Mais
+                      </CustomButton>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="card-body">
+                    <h4 class="font-weight-bold mb-0">Sobre Mim</h4>
+                    <hr />
+                    <p className="card-text">
+                      Desenvolvedor Web apaixonado por tecnologia e programação.
+                      15 anos de experiência em diversas linguagens. Foco em
+                      resultados e soluções inovadoras.
+                    </p>
+                    <hr />
+                    <SocialContainer>
+                      <SocialLink
+                        href="https://instagram.com/diego_ghaldino?igshid=MzNlNGNkZWQ4Mg=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SocialIcon>
+                          <FaInstagram />
+                        </SocialIcon>
+                      </SocialLink>
+                      <SocialLink
+                        href="https://www.facebook.com/diego.galdino.54?mibextid=ZbWKwL"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SocialIcon>
+                          <FaFacebook />
+                        </SocialIcon>
+                      </SocialLink>
+                      <SocialLink
+                        href="https://www.linkedin.com/in/diego-galdinoc"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SocialIcon>
+                          <FaLinkedin />
+                        </SocialIcon>
+                      </SocialLink>
+                      <SocialLink onClick={handleWhatsdiegoAppClick}>
+                        <SocialIcon>
+                          <FaWhatsapp />
+                        </SocialIcon>
+                      </SocialLink>
+                      {/* <SocialLink onClick={handleEmailClick}>
                       <SocialIcon>
                         <FaEnvelope />
                       </SocialIcon>
                     </SocialLink> */}
-                  </SocialContainer>
-                </div>
+                    </SocialContainer>
+
+                    <div className="d-flex justify-content-center mt-3">
+                      <CustomButton onClick={handleClick1}>
+                        Voltar
+                      </CustomButton>
+                    </div>
+                  </div>
+                )}
               </CardQuemSomos>
             </div>
           </div>
