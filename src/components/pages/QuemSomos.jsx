@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import QuemsomosImg from "../../img/5164968.jpg";
+import QuemsomosImg from "../../img/QuemSomos.png";
 import {
   ImageQuemSomos,
   Title,
@@ -61,13 +61,13 @@ const QuemSomos = () => {
           alt="Imagem de Criação de Sites"
         />
         <div className="position-absolute top-0 start-0 mt-5">
-          <div className="container">
+          {/* <div className="container">
             <div className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4">
               <Title data-aos="zoom-out-up" data-aos-duration="800">
                 Quem Somos
               </Title>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -140,6 +140,7 @@ const QuemSomos = () => {
         <h2>Nossa Equipe</h2>
         <ContainerCards className="card-container">
           <div className="row">
+            
             <div className="col-12 col-md-6 mx-auto">
               <CardQuemSomos className="card shadow-lg mt-2 mx-auto">
                 <img

@@ -3,7 +3,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { FaInstagram, FaFacebookSquare, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { ImageCont, Title, TextContatoInfo, LinkWithoutUnderline, LinkWithoutUnderlinewhats, ParagrafoDoTextcolorContato, TitleContato } from "./style";
-import criacaoImg from "../../img/contato.jpg";
+import criacaoImg from "../../img/contato.png";
 import emailjs from "emailjs-com";
 
 import AOS from "aos";
@@ -78,11 +78,11 @@ const Contato = () => {
       <div className="position-relative">
         <ImageCont className="img-fluid" src={criacaoImg} alt="Imagem de Criação de Sites" />
         <div className="position-absolute top-0 start-0 mt-5">
-          <div className="container">
+          {/* <div className="container">
             <div className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4">
               <Title data-aos="zoom-out-up" data-aos-duration="800">Fale Conosco</Title>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="container mb-5">
