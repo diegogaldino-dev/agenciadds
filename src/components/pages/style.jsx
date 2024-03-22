@@ -6,7 +6,7 @@ import backimage from '../../img/19198948.jpg'
 
 import backgroundImage from '../../img/bgcolor.jpg'
 
-import contatoRedes from '../../img/2456059.jpg'
+import contatoRedes from '../../img/contatoo.png'
 
 export const LogoImage = styled.img`
   /* Estilos da imagem do logo */
@@ -213,14 +213,14 @@ export const TextContatoInfo = styled.div`
 
 export const LinkWithoutUnderline = styled.a`
   text-decoration: none;  
-  background-color: rgb(135, 23, 157);
+  background-color: #166AF2;
   padding: 5px 10px;
   border-radius: 8px;
 `
 
 export const LinkWithoutUnderlinewhats = styled.a`
   text-decoration: none;  
-  background-color: rgb(135, 23, 157);
+  background-color: #166AF2;
   padding: 5px 10px;
   border-radius: 8px;
   backdrop-filter: blur(10px);
