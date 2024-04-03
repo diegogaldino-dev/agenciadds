@@ -72,7 +72,7 @@ const Home = () => {
             data-aos="zoom-out-up"
             data-aos-duration="800"
           >
-            Portfolio!
+            Portifolio!
           </h5>
           <h1 className="text-center mb-4">Alguns trabalhos</h1>
           <Carousel>
