@@ -73,7 +73,7 @@ const Tipo_servico = () => {
               data-aos-duration="3000"
             >
               <Cards
-                name="Social Mídia"
+                name="Social Media"
                 image={social}
                 alt=""
                 description="Aumente sua visibilidade online com estratégias personalizadas e eficientes. Oferecemos soluções inovadoras em design, SEO, mídias sociais e mais para alavancar sua marca de forma impressionante. Atualize e otimize consistentemente e proativamente sua presença digital com nossos serviços especializados e profissionais."

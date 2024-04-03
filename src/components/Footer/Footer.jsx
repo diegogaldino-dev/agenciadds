@@ -109,7 +109,7 @@ function Footer() {
                 <LinkWithoutUnderline onClick={handleScrollToTop} as={Link} to="/social-midia" className="text-white">
                   <FaPalette />
                   <span className="pe-3" />
-                  Social Mídia
+                  Social Media
                 </LinkWithoutUnderline>
               </li>
             </ul>
