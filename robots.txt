@@ -1,5 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
-
+# Bloqueia acesso a diretórios e páginas sensíveis
 User-agent: *
 Disallow: /admin/
 Disallow: /private/
@@ -9,4 +8,6 @@ Disallow: /500.html
 Disallow: /thanks.html
 Disallow: /error/
 
+# Especifica a localização do sitemap.xml
 Sitemap: https://ddsdesenvolvimento.com.br/sitemap.xml
+

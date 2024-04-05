@@ -30,13 +30,13 @@ const Social_Media = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <Image className="img-fluid" src={midiaDigital} alt="Imagem Social Midia" />
+        <Image className="img-fluid" src={midiaDigital} alt="Imagem Social Media" />
         <div className="position-absolute top-0 start-0" data-aos="fade-down" data-aos-duration="1000">
           <container data-aos="fade-up" data-aos-duration="1000">
             <div className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4">
-              <TitleMark>Social Midia</TitleMark>
+              <TitleMark>Social Media</TitleMark>
               <Text className="text-left custom-text">
-                Pensando em potencializar sua presença online e alcançar um público maior? Conte com os serviços de social midia da DDS Agência de Desenvolvimento. Nossa equipe especializada oferece soluções personalizadas para impulsionar sua marca e alcançar seus objetivos digitais. Desde estratégias de marketing digital até gerenciamento de redes sociais, estamos prontos para ajudar. Aproveite as vantagens da social midia e destaque-se no mercado. Entre em contato conosco e descubra como podemos impulsionar sua presença online.
+                Pensando em potencializar sua presença online e alcançar um público maior? Conte com os serviços de social media da DDS Agência de Desenvolvimento. Nossa equipe especializada oferece soluções personalizadas para impulsionar sua marca e alcançar seus objetivos digitais. Desde estratégias de marketing digital até gerenciamento de redes sociais, estamos prontos para ajudar. Aproveite as vantagens da social media e destaque-se no mercado. Entre em contato conosco e descubra como podemos impulsionar sua presença online.
               </Text>
             </div>
           </container>
@@ -45,9 +45,9 @@ const Social_Media = () => {
 
       <TextImportancia data-aos="zoom-in" data-aos-delay="300">
         <div className="container pb-5 pt-5 text-center">
-          <h3 style={{ color: "#87179D" }}>Vantagens da Social Midia</h3>
+          <h3 style={{ color: "#87179D" }}>Vantagens da Social Media</h3>
           <p>
-            Destaque sua marca, alcance seu público-alvo e impulsione suas vendas com a social midia. Aumente sua visibilidade, mensure seus resultados e conquiste resultados rápidos. Invista na DDS Agência de Desenvolvimento e aproveite todas as vantagens da social midia para o crescimento do seu negócio.
+            Destaque sua marca, alcance seu público-alvo e impulsione suas vendas com a social media. Aumente sua visibilidade, mensure seus resultados e conquiste resultados rápidos. Invista na DDS Agência de Desenvolvimento e aproveite todas as vantagens da social media para o crescimento do seu negócio.
           </p>
         </div>
       </TextImportancia>

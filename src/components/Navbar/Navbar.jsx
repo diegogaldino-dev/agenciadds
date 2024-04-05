@@ -53,8 +53,8 @@ const NavBar = () => {
             <NavDropdown.Item as={Link} to="/marketing-digital">
               Marketing Digital
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/social-midia">
-              Social Mídia
+            <NavDropdown.Item as={Link} to="/social-media">
+              Social Media
             </NavDropdown.Item>
           </StyledNavDropdown>
         </Nav>

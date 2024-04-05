@@ -310,6 +310,7 @@ export const CollapseOpen = styled.span`
 export const StyledTipo = styled.div`
   font-family: "Roboto Slab", sans-serif;
   background-image: url(${backgroundImage});
+  background-size: cover;
   object-fit: cover;
   color: #fff;
 `;
