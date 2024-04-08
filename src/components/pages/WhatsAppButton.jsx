@@ -1,6 +1,6 @@
 import React from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import AvatarButton from "../../img/logo_oficial 1.svg"
+import AvatarButton from "../../img/logo.png"
 
 const WhatsAppButton = () => {
   return (
