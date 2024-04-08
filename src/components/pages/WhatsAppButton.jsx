@@ -8,7 +8,7 @@ const WhatsAppButton = () => {
       phoneNumber="5511978788732"
       accountName="DDS Desenvolvimento"
       avatar={AvatarButton}
-      message="Olá, gostaria de mais informações."
+      message="Olá! como posso te ajudar hoje ?"
       darkMode={false}
       chatMessage="Olá, gostaria de mais informações."
       allowClickAway={true}
