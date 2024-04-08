@@ -10,7 +10,7 @@ const WhatsAppButton = () => {
       avatar={AvatarButton}
       message="Olá! como posso te ajudar hoje ?"
       darkMode={false}
-      chatMessage="Olá, gostaria de mais informações."
+      chatMessage="Olá! como posso te ajudar hoje ?"
       allowClickAway={true}
       placeholder="Digite sua mensagem aqui..."
       statusMessage="Online" // Mensagem de status
