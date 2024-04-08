@@ -13,7 +13,7 @@ const NotFoundContainer = styled.div`
 `;
 
 const ErrorImage = styled.img`
-  width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+  width: 800px; /* Ajuste o tamanho da imagem conforme necessário */
   margin-bottom: 1rem;
 `;
 
