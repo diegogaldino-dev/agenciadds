@@ -26,7 +26,7 @@ const Router = () => {
           <Route exact path="/criacao-de-sites" element={<CriacaoDeSites />} />
           <Route exact path="/contato" element={<Contato />} />
           <Route exact path="/quem-somos" element={<QuemSomos />} />
-          <Route exact path="/social-midia" element={<SocialMedia />} />
+          <Route exact path="/social-media" element={<SocialMedia />} />
           <Route exact path="/marketing-digital" element={<MarketingDigital />} />
           <Route exact path="/tipo-servico" element={<TipoServico />} />
 

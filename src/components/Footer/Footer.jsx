@@ -106,7 +106,7 @@ function Footer() {
                 </LinkWithoutUnderline>
               </li>
               <li className="mb-2">
-                <LinkWithoutUnderline onClick={handleScrollToTop} as={Link} to="/social-midia" className="text-white">
+                <LinkWithoutUnderline onClick={handleScrollToTop} as={Link} to="/social-media" className="text-white">
                   <FaPalette />
                   <span className="pe-3" />
                   Social Media
@@ -126,7 +126,7 @@ function Footer() {
               </li>
 
               <li className="mb-2">
-                <LinkWithoutUnderline as={Link} to="/social-midia" className="text-white">
+                <LinkWithoutUnderline as={Link} to="/social-media" className="text-white">
                   <FaEnvelope size={20} />
                   <span className="pe-2" />
                   contato@ddsdesenvolvimento.com.br
