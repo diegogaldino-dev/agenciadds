@@ -39,6 +39,9 @@ const NavBar = () => {
           <Nav.Link as={Link} to="/quem-somos">
             <TextContainer>Quem Somos</TextContainer>
           </Nav.Link>
+          <Nav.Link as={Link} to="/blog">
+            <TextContainer>Blog</TextContainer>
+          </Nav.Link>
           <Nav.Link as={Link} to="/contato">
             <TextContainer>Contato</TextContainer>
           </Nav.Link>
