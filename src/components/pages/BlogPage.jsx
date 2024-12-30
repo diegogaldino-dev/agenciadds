@@ -60,31 +60,36 @@ const BlogPage = () => {
   }, []); // O array vazio garante que o efeito seja executado uma vez, quando o componente for montado.
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <h2 className='mt-5'>Blog</h2>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '10px' }}>
+      <h2 className='mt-5' style={{ marginBottom: '30px' }}>Blog</h2>
       {posts.map(post => (
         <div key={post.id} style={{
           display: 'flex',
-          width: '80%',
+          flexDirection: 'column',
+          width: '100%',
+          maxWidth: '800px',
           marginBottom: '20px',
           border: '1px solid #ddd',
           padding: '20px',
           borderRadius: '8px',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-          backgroundColor: '#fff'
+          backgroundColor: '#fff',
+          transition: 'all 0.3s ease',
         }}>
           {/* Imagem do post */}
-          <img
-            src={post.image}
-            alt={post.title}
-            style={{
-              width: '200px',
-              height: '200px',
-              objectFit: 'cover',
-              marginRight: '20px',
-              borderRadius: '8px'
-            }}
-          />
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '15px' }}>
+            <img
+              src={post.image}
+              alt={post.title}
+              style={{
+                width: '100%',
+                height: 'auto',
+                maxWidth: '200px',
+                objectFit: 'cover',
+                borderRadius: '8px',
+              }}
+            />
+          </div>
 
           {/* Conteúdo do post */}
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
@@ -100,7 +105,8 @@ const BlogPage = () => {
                   color: '#fff',
                   border: 'none',
                   borderRadius: '4px',
-                  cursor: 'pointer'
+                  cursor: 'pointer',
+                  transition: 'background-color 0.3s ease',
                 }}
               >
                 Leia mais
