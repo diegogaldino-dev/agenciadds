@@ -21,18 +21,20 @@ const Router = () => {
     <>
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/criacao-de-sites" element={<CriacaoDeSites />} />
-          <Route exact path="/contato" element={<Contato />} />
-          <Route exact path="/quem-somos" element={<QuemSomos />} />
-          <Route exact path="/social-media" element={<SocialMedia />} />
-          <Route exact path="/marketing-digital" element={<MarketingDigital />} />
-          <Route exact path="/tipo-servico" element={<TipoServico />} />
+        <div style={{ paddingTop: "90px" }}> {/* Adicionando padding-top global */}
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/criacao-de-sites" element={<CriacaoDeSites />} />
+            <Route exact path="/contato" element={<Contato />} />
+            <Route exact path="/quem-somos" element={<QuemSomos />} />
+            <Route exact path="/social-media" element={<SocialMedia />} />
+            <Route exact path="/marketing-digital" element={<MarketingDigital />} />
+            <Route exact path="/tipo-servico" element={<TipoServico />} />
 
-          {/* Rota para a página NotFound */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            {/* Rota para a página NotFound */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
         <WhatsAppButton />
         <Footer />
       </BrowserRouter>

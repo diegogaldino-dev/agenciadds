@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect,} from "react";
 import { StyledTipo } from "./style";
 
 import Cards from "./Cards/Cards";
@@ -12,81 +12,76 @@ import "aos/dist/aos.css";
 
 const Tipo_servico = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 800, once: true });
   }, []);
 
-  // Adicione o estado para controlar a exibição da descrição
-  const [showDescription, setShowDescription] = useState(false);
-
   return (
-    <div style={{ margin: 0, width: "100%" }}>
+    <section style={{ margin: 0, width: "100%" }}>
       <StyledTipo>
         <div className="container mx-auto my-5">
+          {/* Título da seção */}
           <div className="row">
             <div className="col-12">
               <h1
                 className="text-center mt-5"
                 data-aos="zoom-out-up"
-                data-aos-duration="800"
+                aria-label="Tipos de serviços oferecidos pela nossa empresa"
               >
-                Tipos Serviços
+                Tipos de Serviços
               </h1>
             </div>
           </div>
+
+          {/* Cartões de Serviços */}
           <div className="row">
+            {/* Desenvolvimento de Sites */}
             <div
               className="col-lg-4 col-md-6 col-sm-12 col-12 my-4"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              aria-label="Desenvolvimento de Sites"
             >
-              {/* Adicione eventos onMouseEnter e onMouseLeave */}
               <Cards
                 name="Desenvolvimento de Sites"
                 image={Desen}
-                alt=""
+                alt="Ilustração de desenvolvimento de sites"
                 description="Transforme sua presença online com um site profissional e responsivo. Oferecemos serviços de desenvolvimento de sites sob medida para atender às suas necessidades específicas. Além disso, também realizamos atualizações em websites existentes, garantindo que sua presença digital esteja sempre atualizada e otimizada."
                 categoryLink="/criacao-de-sites"
-                onMouseEnter={() => setShowDescription(true)}
-                onMouseLeave={() => setShowDescription(false)}
-                showDescription={showDescription}
               />
             </div>
+
+            {/* Marketing Digital */}
             <div
               className="col-lg-4 col-md-6 col-sm-12 col-12 my-4"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              aria-label="Marketing Digital"
             >
               <Cards
                 name="Marketing Digital"
                 image={marketing}
-                alt=""
+                alt="Ilustração de marketing digital"
                 description="Potencialize sua marca online com estratégias de marketing digital personalizadas. Oferecemos soluções completas e inovadoras em SEO, mídias sociais, anúncios e muito mais para impulsionar seu negócio. Mantenha sua presença digital atualizada, otimizada, competitiva e impactante com nossos serviços especializados e eficientes."
                 categoryLink="/marketing-digital"
-                onMouseEnter={() => setShowDescription(true)}
-                onMouseLeave={() => setShowDescription(false)}
-                showDescription={showDescription}
               />
             </div>
+
+            {/* Social Media */}
             <div
               className="col-lg-4 col-md-6 col-sm-12 col-12 my-4"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              aria-label="Social Media"
             >
               <Cards
                 name="Social Media"
                 image={social}
-                alt=""
+                alt="Ilustração de social media"
                 description="Aumente sua visibilidade online com estratégias personalizadas e eficientes. Oferecemos soluções inovadoras em design, SEO, mídias sociais e mais para alavancar sua marca de forma impressionante. Atualize e otimize consistentemente e proativamente sua presença digital com nossos serviços especializados e profissionais."
                 categoryLink="/social-midia"
-                onMouseEnter={() => setShowDescription(true)}
-                onMouseLeave={() => setShowDescription(false)}
-                showDescription={showDescription}
               />
             </div>
           </div>
         </div>
       </StyledTipo>
-    </div>
+    </section>
   );
 };
 

@@ -48,6 +48,7 @@ export const TextLogo = styled.span`
     font-size: 10px;
   }
 `;
+
 export const StyledNavText = styled.span`
   color: #fff;
 `;
@@ -59,19 +60,40 @@ export const StyledNavDropdown = styled(NavDropdown)`
     text-shadow: -1px -1px 0px #a924f0, -1px 1px 0px #a924f0,
       1px -1px 0px #a924f0, 1px 0px 0px #a924f0;
   }
+
+  .dropdown-menu {
+    background-color: #4e007d;
+    border-radius: 5px;
+  }
+
+  .dropdown-item {
+    color: #fff;
+    font-size: 18px;
+    &:hover {
+      background-color: #650093;
+      color: #fff;
+    }
+  }
 `;
 
 export const StyledNavbar = styled(Navbar)`
   background-image: linear-gradient(
-  65deg,
-  #43008d 0,
-  #650093 25%,
-  #86169d 50%,
-  #a42fa7 75%,
-  #bd41ae 100%
-);
-  
+    65deg,
+    #43008d 0,
+    #650093 25%,
+    #86169d 50%,
+    #a42fa7 75%,
+    #bd41ae 100%
+  );
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
 `;
+
 export const TextContainer = styled.span`
   font-size: 20px;
   color: #fff;
@@ -82,3 +104,14 @@ export const TextContainer = styled.span`
 export const IconWidth = styled.span`
   font-size: 25px;
 `;
+
+export const StyledNavLink = styled(Nav.Link)`
+  font-size: 20px;
+  color: #fff;
+  text-shadow: -1px -1px 0px #a924f0, -1px 1px 0px #a924f0, 1px -1px 0px #a924f0,
+    1px 0px 0px #a924f0;
+  &:hover {
+    color: #ff7963;
+  }
+`;
+
