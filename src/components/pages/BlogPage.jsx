@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import post1 from '../../img/blog/post1.png'
-import post2 from '../../img/blog/post2.png'
-import post3 from '../../img/blog/post3.png'
-import post4 from '../../img/blog/post4.png'
-import post5 from '../../img/blog/post5.png'
-
+import post1 from '../../img/blog/post1.png';
+import post2 from '../../img/blog/post2.png';
+import post3 from '../../img/blog/post3.png';
+import post4 from '../../img/blog/post4.png';
+import post5 from '../../img/blog/post5.png';
 
 const BlogPage = () => {
   const posts = [
@@ -41,33 +40,52 @@ const BlogPage = () => {
     },
   ];
 
+  useEffect(() => {
+    // Adiciona o script do Google Analytics
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-RHJ8R95WMZ";
+    document.head.appendChild(script1);
+
+    script1.onload = () => {
+      const script2 = document.createElement("script");
+      script2.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RHJ8R95WMZ');
+      `;
+      document.head.appendChild(script2);
+    };
+  }, []); // O array vazio garante que o efeito seja executado uma vez, quando o componente for montado.
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h2 className='mt-5'>Blog</h2>
       {posts.map(post => (
-        <div key={post.id} style={{ 
-          display: 'flex', 
-          width: '80%', 
-          marginBottom: '20px', 
-          border: '1px solid #ddd', 
+        <div key={post.id} style={{
+          display: 'flex',
+          width: '80%',
+          marginBottom: '20px',
+          border: '1px solid #ddd',
           padding: '20px',
           borderRadius: '8px',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
           backgroundColor: '#fff'
         }}>
           {/* Imagem do post */}
-          <img 
-            src={post.image} 
+          <img
+            src={post.image}
             alt={post.title}
             style={{
-              width: '200px', 
-              height: '200px', 
-              objectFit: 'cover', 
-              marginRight: '20px', 
+              width: '200px',
+              height: '200px',
+              objectFit: 'cover',
+              marginRight: '20px',
               borderRadius: '8px'
-            }} 
+            }}
           />
-          
+
           {/* Conteúdo do post */}
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <h2 style={{ fontSize: '24px', color: '#333', marginBottom: '10px' }}>{post.title}</h2>
@@ -75,13 +93,13 @@ const BlogPage = () => {
               {post.summary}
             </p>
             <Link to={`/post/${post.id}`}>
-              <button 
+              <button
                 style={{
-                  padding: '10px 20px', 
-                  backgroundColor: '#007BFF', 
-                  color: '#fff', 
-                  border: 'none', 
-                  borderRadius: '4px', 
+                  padding: '10px 20px',
+                  backgroundColor: '#007BFF',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '4px',
                   cursor: 'pointer'
                 }}
               >

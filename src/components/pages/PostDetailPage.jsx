@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import post1 from '../../img/blog/materia/1.png'
 import post2 from '../../img/blog/materia/2.png'
@@ -113,6 +113,25 @@ const posts = [
 function PostDetailPage() {
   const { id } = useParams();
   const post = posts.find(p => p.id === parseInt(id));
+
+  // Adicionando o código de rastreamento do Google Analytics
+  useEffect(() => {
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-RHJ8R95WMZ";
+    document.head.appendChild(script1);
+
+    script1.onload = () => {
+      const script2 = document.createElement("script");
+      script2.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RHJ8R95WMZ');
+      `;
+      document.head.appendChild(script2);
+    };
+  }, []);
 
   if (!post) {
     return <h2>Post não encontrado</h2>;
