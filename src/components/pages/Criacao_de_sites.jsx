@@ -3,7 +3,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import useGoogleAnalytics from "../useGoogleAnalytics";
 
-import { Image, TitleCreate, Text, TextBGColor, TextImportancia, TextBackground, ParagrafoDoTextBackground, DivTextCreater } from "./style";
+import {
+  Image,
+  TitleCreate,
+  Text,
+  TextBGColor,
+  TextImportancia,
+  TextBackground,
+  ParagrafoDoTextBackground,
+  DivTextCreater,
+} from "./style";
 import { Button } from "react-bootstrap";
 import { FaWhatsapp, FaChevronRight } from "react-icons/fa";
 import { AiFillFileText } from "react-icons/ai";
@@ -15,11 +24,27 @@ import criacaoImg from "../../img/cropped-view-hands-typing-laptop.jpg";
 const Criacao_de_sites = () => {
   useGoogleAnalytics("G-RHJ8R95WMZ");
 
-  useEffect(() => {    
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
     });
+    // Adicione o código de rastreamento do Google Analytics aqui
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-RHJ8R95WMZ";
+    document.head.appendChild(script1);
+
+    script1.onload = () => {
+      const script2 = document.createElement("script");
+      script2.innerHTML = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RHJ8R95WMZ');
+`;
+      document.head.appendChild(script2);
+    };
   }, []);
 
   const sendWhatsAppMessage = () => {
@@ -42,16 +67,23 @@ const Criacao_de_sites = () => {
           loading="lazy"
         />
         <div className="position-absolute top-0 start-0">
-          <div data-aos="fade-up" className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4">
-            <TitleCreate>Criação de Sites Profissionais e Personalizados</TitleCreate>
+          <div
+            data-aos="fade-up"
+            className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4"
+          >
+            <TitleCreate>
+              Criação de Sites Profissionais e Personalizados
+            </TitleCreate>
             <Text className="text-center text-md-left custom-text">
-              Na DDS Agência de Desenvolvimento, criamos sites que se destacam! 
-              Desenvolvemos sites profissionais, personalizados e gerenciáveis para empresas, 
-              profissionais liberais e até mesmo projetos pessoais. Um site moderno e otimizado para SEO 
-              é o primeiro passo para o sucesso online.
+              Na DDS Agência de Desenvolvimento, criamos sites que se destacam!
+              Desenvolvemos sites profissionais, personalizados e gerenciáveis
+              para empresas, profissionais liberais e até mesmo projetos
+              pessoais. Um site moderno e otimizado para SEO é o primeiro passo
+              para o sucesso online.
               <br />
               <br />
-              Além disso, desenvolvemos landing pages de alta conversão, perfeitas para impulsionar suas campanhas e gerar mais resultados.
+              Além disso, desenvolvemos landing pages de alta conversão,
+              perfeitas para impulsionar suas campanhas e gerar mais resultados.
             </Text>
             <Button
               onClick={sendWhatsAppMessage}
@@ -73,11 +105,14 @@ const Criacao_de_sites = () => {
       <section>
         <TextImportancia data-aos="fade-up">
           <div className="container pb-5 pt-5 text-center">
-            <h2 style={{ color: "#87179D" }}>Por que investir em um site profissional?</h2>
+            <h2 style={{ color: "#87179D" }}>
+              Por que investir em um site profissional?
+            </h2>
             <p>
-              Um site profissional aumenta sua visibilidade nos mecanismos de busca, 
-              transmite credibilidade e impulsiona seu negócio. É a ponte entre sua marca 
-              e seus clientes. Não fique para trás, seja encontrado online!
+              Um site profissional aumenta sua visibilidade nos mecanismos de
+              busca, transmite credibilidade e impulsiona seu negócio. É a ponte
+              entre sua marca e seus clientes. Não fique para trás, seja
+              encontrado online!
             </p>
             <Button
               onClick={sendWhatsAppMessage}
@@ -101,20 +136,40 @@ const Criacao_de_sites = () => {
                   As 4 etapas da criação do seu site
                 </TextBackground>
                 <ParagrafoDoTextBackground className="shadow-lg">
-                  Criar um site é um processo que exige planejamento estratégico 
-                  e execução com excelência. Nossa equipe garante que cada etapa seja 
-                  realizada de forma profissional, focando nos objetivos do seu negócio.
+                  Criar um site é um processo que exige planejamento estratégico
+                  e execução com excelência. Nossa equipe garante que cada etapa
+                  seja realizada de forma profissional, focando nos objetivos do
+                  seu negócio.
                 </ParagrafoDoTextBackground>
               </div>
               <DivTextCreater className="col-md-6 shadow-lg">
-                <h4 data-aos="fade-up">Briefing <FaChevronRight color="#702AAF" /></h4>
-                <p>Entender suas expectativas para criar um site único e funcional.</p>
-                <h4 data-aos="fade-up">Conteúdos <AiFillFileText color="#166AF2" /></h4>
-                <p>Textos e imagens otimizados para engajar e converter clientes.</p>
-                <h4 data-aos="fade-up">Criação do site <BsCodeSlash color="#87179D" /></h4>
-                <p>Equipe dedicada desenvolvendo o site perfeito para o seu negócio.</p>
-                <h4 data-aos="fade-up">Finalização <FiCheckCircle color="green" /></h4>
-                <p>Testes e publicação para garantir uma experiência impecável ao usuário.</p>
+                <h4 data-aos="fade-up">
+                  Briefing <FaChevronRight color="#702AAF" />
+                </h4>
+                <p>
+                  Entender suas expectativas para criar um site único e
+                  funcional.
+                </p>
+                <h4 data-aos="fade-up">
+                  Conteúdos <AiFillFileText color="#166AF2" />
+                </h4>
+                <p>
+                  Textos e imagens otimizados para engajar e converter clientes.
+                </p>
+                <h4 data-aos="fade-up">
+                  Criação do site <BsCodeSlash color="#87179D" />
+                </h4>
+                <p>
+                  Equipe dedicada desenvolvendo o site perfeito para o seu
+                  negócio.
+                </p>
+                <h4 data-aos="fade-up">
+                  Finalização <FiCheckCircle color="green" />
+                </h4>
+                <p>
+                  Testes e publicação para garantir uma experiência impecável ao
+                  usuário.
+                </p>
                 <Button
                   onClick={sendWhatsAppMessage}
                   className="mt-3"

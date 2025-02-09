@@ -1,10 +1,21 @@
 import React, { useState, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { FaInstagram, FaFacebookSquare, FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import { ImageCont,
+import {
+  FaInstagram,
+  FaFacebookSquare,
+  FaWhatsapp,
+  FaEnvelope,
+} from "react-icons/fa";
+import {
+  ImageCont,
   //  Title,
-    TextContatoInfo, LinkWithoutUnderline, LinkWithoutUnderlinewhats, ParagrafoDoTextcolorContato, TitleContato } from "./style";
+  TextContatoInfo,
+  LinkWithoutUnderline,
+  LinkWithoutUnderlinewhats,
+  ParagrafoDoTextcolorContato,
+  TitleContato,
+} from "./style";
 import criacaoImg from "../../img/contato.png";
 import emailjs from "emailjs-com";
 
@@ -17,6 +28,22 @@ const Contato = () => {
   useGoogleAnalytics("G-RHJ8R95WMZ");
   useEffect(() => {
     AOS.init({ duration: 800 });
+    // Adicione o código de rastreamento do Google Analytics aqui
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-RHJ8R95WMZ";
+    document.head.appendChild(script1);
+
+    script1.onload = () => {
+      const script2 = document.createElement("script");
+      script2.innerHTML = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RHJ8R95WMZ');
+    `;
+      document.head.appendChild(script2);
+    };
   }, []);
 
   const [nome, setNome] = useState("");
@@ -43,9 +70,18 @@ const Contato = () => {
     };
 
     emailjs
-      .send("service_gkdoxvk", "template_83jgowb", templateParams, "88DF6UT7AMerV1tQt")
+      .send(
+        "service_gkdoxvk",
+        "template_83jgowb",
+        templateParams,
+        "88DF6UT7AMerV1tQt"
+      )
       .then((response) => {
-        console.log("E-mail enviado com sucesso!", response.status, response.text);
+        console.log(
+          "E-mail enviado com sucesso!",
+          response.status,
+          response.text
+        );
         // Limpe o formulário após o envio
         setNome("");
         setEmail("");
@@ -81,7 +117,11 @@ const Contato = () => {
         </div>
       )}
       <div className="position-relative">
-        <ImageCont className="img-fluid" src={criacaoImg} alt="Imagem de Criação de Sites" />
+        <ImageCont
+          className="img-fluid"
+          src={criacaoImg}
+          alt="Imagem de Criação de Sites"
+        />
         <div className="position-absolute top-0 start-0 mt-5">
           {/* <div className="container">
             <div className="d-flex flex-column align-items-start align-items-md-center ml-2 ml-md-4">
@@ -91,11 +131,20 @@ const Contato = () => {
         </div>
       </div>
       <div className="container mb-5">
-        <h2 className="mt-4" data-aos="fade-up" data-aos-duration="1000">Fale com a gente!</h2>
-        <h6 data-aos="fade-up" data-aos-duration="1000">Seu contato é muito importante</h6>
+        <h2 className="mt-4" data-aos="fade-up" data-aos-duration="1000">
+          Fale com a gente!
+        </h2>
+        <h6 data-aos="fade-up" data-aos-duration="1000">
+          Seu contato é muito importante
+        </h6>
         <div className="row">
           <div className="col-md-6">
-            <form className="mt-4 mb-4" onSubmit={enviarEmail} data-aos="fade-up" data-aos-duration="1000">
+            <form
+              className="mt-4 mb-4"
+              onSubmit={enviarEmail}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
                   Nome:
@@ -153,14 +202,20 @@ const Contato = () => {
             </form>
           </div>
           <div className="col-md-6">
-            <TextContatoInfo className="p-4 rounded shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+            <TextContatoInfo
+              className="p-4 rounded shadow-lg"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div>
                 <div className="text-center">
-                  <TitleContato className="text-center mt-4 shadow-lg">Contatos</TitleContato>
+                  <TitleContato className="text-center mt-4 shadow-lg">
+                    Contatos
+                  </TitleContato>
                 </div>
                 <ParagrafoDoTextcolorContato className="mr-3 text-white">
                   <LinkWithoutUnderlinewhats
-                    className="text-white shadow-lg"                    
+                    className="text-white shadow-lg"
                     onClick={handleWhatsappClick}
                   >
                     <FaWhatsapp className="mr-4" /> Whatsapp (Comercial)
@@ -169,15 +224,21 @@ const Contato = () => {
                 <ParagrafoDoTextcolorContato>
                   <LinkWithoutUnderline
                     className="text-white shadow-lg"
-                    href="mailto:contato@ddsdesenvolvimento.com.br"                  
+                    href="mailto:contato@ddsdesenvolvimento.com.br"
                   >
-                    <FaEnvelope className="mr-4 text-white" /> contato@ddsdesenvolvimento.com.br
+                    <FaEnvelope className="mr-4 text-white" />{" "}
+                    contato@ddsdesenvolvimento.com.br
                   </LinkWithoutUnderline>
                 </ParagrafoDoTextcolorContato>
 
                 <ul className="list-unstyled d-flex flex-row justify-content-center">
                   <li>
-                    <a className="text-white px-2" href="https://www.facebook.com/profile.php?id=100093569524691&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                    <a
+                      className="text-white px-2"
+                      href="https://www.facebook.com/profile.php?id=100093569524691&mibextid=ZbWKwL"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div
                         className="rounded-circle bg-white d-flex align-items-center justify-content-center shadow-lg"
                         style={{ width: "40px", height: "40px" }}
@@ -187,7 +248,12 @@ const Contato = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="text-white px-2" href="https://www.instagram.com/dds_desenvolvimento/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      className="text-white px-2"
+                      href="https://www.instagram.com/dds_desenvolvimento/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div
                         className="rounded-circle bg-white d-flex align-items-center justify-content-center shadow-lg"
                         style={{
@@ -213,7 +279,12 @@ const Contato = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title">Modal do Bootstrap</h5>
-              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -221,7 +292,11 @@ const Contato = () => {
               <p>Aqui você pode adicionar o conteúdo do modal do Bootstrap.</p>
             </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" data-dismiss="modal">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-dismiss="modal"
+              >
                 Fechar
               </button>
               <button type="button" className="btn btn-primary">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import useGoogleAnalytics from "../useGoogleAnalytics";
@@ -15,15 +15,30 @@ import { Card, Container } from "react-bootstrap";
 
 import mktImg from "../../img/31958.jpg";
 
-import Alinhamento from "../../img/icons/alinhamento.jpg"
-import Estrategia from "../../img/icons/estrategiapersonalizada.jpg"
-import Relacionamento from "../../img/icons/relacionamentoeresultado.jpg"
-
+import Alinhamento from "../../img/icons/alinhamento.jpg";
+import Estrategia from "../../img/icons/estrategiapersonalizada.jpg";
+import Relacionamento from "../../img/icons/relacionamentoeresultado.jpg";
 
 const MarketingDigital = () => {
   useGoogleAnalytics("G-RHJ8R95WMZ");
   useEffect(() => {
     AOS.init({ duration: 800 });
+    // Adicione o código de rastreamento do Google Analytics aqui
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-RHJ8R95WMZ";
+    document.head.appendChild(script1);
+
+    script1.onload = () => {
+      const script2 = document.createElement("script");
+      script2.innerHTML = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RHJ8R95WMZ');
+`;
+      document.head.appendChild(script2);
+    };
   }, []);
   const [isFirstCollapseOpen, setIsFirstCollapseOpen] = useState(false);
   const [isSecondCollapseOpen, setIsSecondCollapseOpen] = useState(false);
@@ -78,7 +93,11 @@ const MarketingDigital = () => {
 
   return (
     <>
-      <div className="position-relative" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        className="position-relative"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <Image
           className="img-fluid"
           src={mktImg}
@@ -103,7 +122,11 @@ const MarketingDigital = () => {
       </div>
 
       <TextImportancia>
-        <Container className="py-5 text-center" data-aos="fade-left" data-aos-duration="1000">
+        <Container
+          className="py-5 text-center"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <h3 style={{ color: "#87179D" }}>
             Como funciona o Processo na Agência de Marketing Digital – DDS
           </h3>
@@ -111,13 +134,13 @@ const MarketingDigital = () => {
       </TextImportancia>
       <div className="container" data-aos="zoom-in" data-aos-duration="1000">
         <div className="row">
-          <div className="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+          <div
+            className="col-md-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <div className="text-center">
-              <img
-                src={Alinhamento}
-                alt="Imagem 1"
-                className="img-fluid"
-              />
+              <img src={Alinhamento} alt="Imagem 1" className="img-fluid" />
               <h4 className="text-uppercase">Alinhamento com o Time</h4>
               <p>
                 O primeiro passo para o sucesso é o alinhamento perfeito entre
@@ -147,12 +170,12 @@ const MarketingDigital = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="text-center" data-aos="fade-right" data-aos-duration="1000">
-              <img
-                src={Estrategia}
-                alt="Imagem 2"
-                className="img-fluid"
-              />
+            <div
+              className="text-center"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <img src={Estrategia} alt="Imagem 2" className="img-fluid" />
               <h4 className="text-uppercase">Estratégias Personalizadas</h4>
               <p>
                 Na DDS, entendemos que cada cliente é único e possui
@@ -184,13 +207,13 @@ const MarketingDigital = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+          <div
+            className="col-md-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <div className="text-center">
-              <img
-                src={Relacionamento}
-                alt="Imagem 3"
-                className="img-fluid"
-              />
+              <img src={Relacionamento} alt="Imagem 3" className="img-fluid" />
               <h4 className="text-uppercase">Relacionamento e Resultados</h4>
               <p>
                 Acreditamos no poder das parcerias duradouras. Na DDS, não
@@ -224,7 +247,11 @@ const MarketingDigital = () => {
         </div>
       </div>
 
-      <div className="form-group container mb-4 mt-5" data-aos="flip-right" data-aos-duration="1000">
+      <div
+        className="form-group container mb-4 mt-5"
+        data-aos="flip-right"
+        data-aos-duration="1000"
+      >
         <h2 className="text-center mt-5 mb-5" style={{ color: "#87179D" }}>
           Perguntas Frequentes
         </h2>

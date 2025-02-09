@@ -1,4 +1,4 @@
-import React, { useEffect,} from "react";
+import React, { useEffect } from "react";
 import { StyledTipo } from "./style";
 
 import Cards from "./Cards/Cards";
@@ -15,6 +15,22 @@ const Tipo_servico = () => {
   useGoogleAnalytics("G-RHJ8R95WMZ");
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
+    // Adicione o código de rastreamento do Google Analytics aqui
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-RHJ8R95WMZ";
+    document.head.appendChild(script1);
+
+    script1.onload = () => {
+      const script2 = document.createElement("script");
+      script2.innerHTML = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RHJ8R95WMZ');
+`;
+      document.head.appendChild(script2);
+    };
   }, []);
 
   return (

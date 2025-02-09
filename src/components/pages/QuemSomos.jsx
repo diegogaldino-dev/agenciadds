@@ -65,6 +65,22 @@ const QuemSomos = () => {
 
   useEffect(() => {
     AOS.init();
+    // Adicione o código de rastreamento do Google Analytics aqui
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-RHJ8R95WMZ";
+    document.head.appendChild(script1);
+
+    script1.onload = () => {
+      const script2 = document.createElement("script");
+      script2.innerHTML = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RHJ8R95WMZ');
+`;
+      document.head.appendChild(script2);
+    };
   }, []);
   return (
     <>
@@ -92,12 +108,11 @@ const QuemSomos = () => {
         <div className="row">
           <div className="col-md-12">
             <p data-aos="fade-up" data-aos-duration="1000">
-              Fundada por Dayane Laura,
-              especialista em Social Media, nossa empresa nasceu com o objetivo
-              de atender o máximo de pessoas e empresas possível. Acreditamos
-              que todas as empresas, independentemente do tamanho ou setor,
-              merecem ter acesso a soluções digitais de qualidade que
-              impulsionem seu sucesso.
+              Fundada por Dayane Laura, especialista em Social Media, nossa
+              empresa nasceu com o objetivo de atender o máximo de pessoas e
+              empresas possível. Acreditamos que todas as empresas,
+              independentemente do tamanho ou setor, merecem ter acesso a
+              soluções digitais de qualidade que impulsionem seu sucesso.
             </p>
             <p data-aos="fade-up" data-aos-duration="1000">
               Com vasta experiência em nossas áreas de atuação e um compromisso
