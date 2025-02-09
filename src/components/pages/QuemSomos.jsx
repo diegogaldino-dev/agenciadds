@@ -20,7 +20,7 @@ import {
 
 import useGoogleAnalytics from "../useGoogleAnalytics";
 
-import Diego from "../../img/profile/Diego Site .png";
+// import Diego from "../../img/profile/Diego Site .png";
 import Dayane from "../../img/profile/Dayane Site .png";
 
 import AOS from "aos";
@@ -29,15 +29,14 @@ import "aos/dist/aos.css";
 const QuemSomos = () => {
   useGoogleAnalytics("G-RHJ8R95WMZ");
   const [isFront, setIsFront] = useState(true);
-  const [isFront1, setIsFront1] = useState(true);
-
+  // const [isFront1, setIsFront1] = useState(true);
 
   const handleClick = () => {
-    setIsFront(!isFront);    
+    setIsFront(!isFront);
   };
-  const handleClick1 = () => {
-    setIsFront1(!isFront1);    
-  };
+  // const handleClick1 = () => {
+  //   setIsFront1(!isFront1);
+  // };
 
   const handleWhatsAppClick = () => {
     const phoneNumber = "5511978788732";
@@ -48,14 +47,14 @@ const QuemSomos = () => {
     window.open(whatsappUrl, "_blank");
   };
 
-  const handleWhatsdiegoAppClick = () => {
-    const phoneNumber = "5511978788732";
-    const message = "Oi Diego Gostaria de mais informações.";
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
-      message
-    )}`;
-    window.open(whatsappUrl, "_blank");
-  };
+  // const handleWhatsdiegoAppClick = () => {
+  //   const phoneNumber = "5511978788732";
+  //   const message = "Oi Diego Gostaria de mais informações.";
+  //   const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+  //     message
+  //   )}`;
+  //   window.open(whatsappUrl, "_blank");
+  // };
 
   // const handleEmailClick = () => {
   //   const emailAddress = "contato@ddsdesenvolvimento.com.br"; // Coloque o endereço de e-mail que deseja usar
@@ -93,7 +92,7 @@ const QuemSomos = () => {
         <div className="row">
           <div className="col-md-12">
             <p data-aos="fade-up" data-aos-duration="1000">
-              Fundada por Diego Galdino, programador, e Dayane Laura,
+              Fundada por Dayane Laura,
               especialista em Social Media, nossa empresa nasceu com o objetivo
               de atender o máximo de pessoas e empresas possível. Acreditamos
               que todas as empresas, independentemente do tamanho ou setor,
@@ -154,7 +153,7 @@ const QuemSomos = () => {
       >
         <h2>Nossa Equipe</h2>
         <ContainerCards className="card-container">
-          <div className="row">          
+          <div className="row">
             <div className="col-12 col-md-6 mx-auto">
               <CardQuemSomos className="card shadow-lg mt-2 mx-auto">
                 <img
@@ -180,57 +179,55 @@ const QuemSomos = () => {
                     <h4 class="font-weight-bold mb-0">Sobre Mim</h4>
                     <hr />
                     <p className="card-text">
-                      Day, atuando em marketing, com 10 anos de experiência em RH,
-                      mídias sociais e campanhas de tráfego, foco em resultados
-                      mensuráveis.
+                      Day, atuando em marketing, com 10 anos de experiência em
+                      RH, mídias sociais e campanhas de tráfego, foco em
+                      resultados mensuráveis.
                     </p>
                     <hr />
                     <SocialContainer>
-                    <SocialLink
-                      href="https://www.instagram.com/day_tico/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SocialIcon>
-                        <FaInstagram />
-                      </SocialIcon>
-                    </SocialLink>
-                    <SocialLink
-                      href="https://www.facebook.com/diana.cucanhoto"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SocialIcon>
-                        <FaFacebook />
-                      </SocialIcon>
-                    </SocialLink>
-                    <SocialLink
-                      href="https://www.linkedin.com/in/dayane-m-laura-65b803192/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SocialIcon>
-                        <FaLinkedin />
-                      </SocialIcon>
-                    </SocialLink>
-                    <SocialLink onClick={handleWhatsAppClick}>
-                      <SocialIcon>
-                        <FaWhatsapp />
-                      </SocialIcon>
-                    </SocialLink>
-                  </SocialContainer>
+                      <SocialLink
+                        href="https://www.instagram.com/day_tico/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SocialIcon>
+                          <FaInstagram />
+                        </SocialIcon>
+                      </SocialLink>
+                      <SocialLink
+                        href="https://www.facebook.com/diana.cucanhoto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SocialIcon>
+                          <FaFacebook />
+                        </SocialIcon>
+                      </SocialLink>
+                      <SocialLink
+                        href="https://www.linkedin.com/in/dayane-m-laura-65b803192/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SocialIcon>
+                          <FaLinkedin />
+                        </SocialIcon>
+                      </SocialLink>
+                      <SocialLink onClick={handleWhatsAppClick}>
+                        <SocialIcon>
+                          <FaWhatsapp />
+                        </SocialIcon>
+                      </SocialLink>
+                    </SocialContainer>
 
                     <div className="d-flex justify-content-center mt-3">
-                      <CustomButton onClick={handleClick}>
-                        Voltar
-                      </CustomButton>
+                      <CustomButton onClick={handleClick}>Voltar</CustomButton>
                     </div>
                   </div>
                 )}
               </CardQuemSomos>
             </div>
 
-            <div className="col-12 col-md-6 mx-auto">
+            {/* <div className="col-12 col-md-6 mx-auto">
               <CardQuemSomos className="card shadow-lg mt-2 mx-auto">
                 <img
                   className="card-img-top"
@@ -293,22 +290,16 @@ const QuemSomos = () => {
                           <FaWhatsapp />
                         </SocialIcon>
                       </SocialLink>
-                      {/* <SocialLink onClick={handleEmailClick}>
-                      <SocialIcon>
-                        <FaEnvelope />
-                      </SocialIcon>
-                    </SocialLink> */}
+                      
                     </SocialContainer>
 
                     <div className="d-flex justify-content-center mt-3">
-                      <CustomButton onClick={handleClick1}>
-                        Voltar
-                      </CustomButton>
+                      <CustomButton onClick={handleClick1}>Voltar</CustomButton>
                     </div>
                   </div>
                 )}
               </CardQuemSomos>
-            </div>
+            </div> */}
           </div>
         </ContainerCards>
       </section>
