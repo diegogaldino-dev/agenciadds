@@ -8,10 +8,13 @@ import { ImageCont,
 import criacaoImg from "../../img/contato.png";
 import emailjs from "emailjs-com";
 
+import useGoogleAnalytics from "../useGoogleAnalytics";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Contato = () => {
+  useGoogleAnalytics("G-RHJ8R95WMZ");
   useEffect(() => {
     AOS.init({ duration: 800 });
   }, []);

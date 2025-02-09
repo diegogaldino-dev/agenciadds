@@ -9,8 +9,10 @@ import marketing from "../../img/icons/5618169.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import useGoogleAnalytics from "../useGoogleAnalytics";
 
 const Tipo_servico = () => {
+  useGoogleAnalytics("G-RHJ8R95WMZ");
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);

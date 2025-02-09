@@ -18,7 +18,10 @@ import { FiCheckCircle } from "react-icons/fi";
 
 import midiaDigital from "../../img/3107569.jpg";
 
+import useGoogleAnalytics from "../useGoogleAnalytics";
+
 const Social_Media = () => {
+  useGoogleAnalytics("G-RHJ8R95WMZ");
   useEffect(() => {
     AOS.init({ duration: 800 });
   }, []);

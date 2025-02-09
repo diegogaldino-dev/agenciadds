@@ -18,6 +18,8 @@ import {
   // FaEnvelope,
 } from "react-icons/fa";
 
+import useGoogleAnalytics from "../useGoogleAnalytics";
+
 import Diego from "../../img/profile/Diego Site .png";
 import Dayane from "../../img/profile/Dayane Site .png";
 
@@ -25,6 +27,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const QuemSomos = () => {
+  useGoogleAnalytics("G-RHJ8R95WMZ");
   const [isFront, setIsFront] = useState(true);
   const [isFront1, setIsFront1] = useState(true);
 

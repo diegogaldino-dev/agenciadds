@@ -2,7 +2,11 @@ import React from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import AvatarButton from "../../img/logo.png"
 
+import useGoogleAnalytics from "../useGoogleAnalytics";
+
 const WhatsAppButton = () => {
+  useGoogleAnalytics("G-RHJ8R95WMZ");
+
   return (
     <FloatingWhatsApp
       phoneNumber="5511978788732"

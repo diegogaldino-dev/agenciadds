@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import useGoogleAnalytics from '../useGoogleAnalytics';
 
 // Importe a imagem
 import errorImage from '../../img/gif/404.gif';
@@ -29,6 +30,7 @@ const Message = styled.p`
 `;
 
 const NotFound = () => {
+  useGoogleAnalytics("G-RHJ8R95WMZ");
   return (
     <NotFoundContainer>
       {/* Exibe a imagem */}

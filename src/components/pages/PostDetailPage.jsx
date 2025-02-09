@@ -6,6 +6,8 @@ import post3 from '../../img/blog/materia/3.png'
 import post4 from '../../img/blog/materia/4.png'
 import post5 from '../../img/blog/materia/5.png'
 
+import useGoogleAnalytics from '../useGoogleAnalytics';
+
 const posts = [
   {
     id: 1,
@@ -111,6 +113,7 @@ const posts = [
 ];
 
 function PostDetailPage() {
+  useGoogleAnalytics("G-RHJ8R95WMZ");
   const { id } = useParams();
   const post = posts.find(p => p.id === parseInt(id));
 

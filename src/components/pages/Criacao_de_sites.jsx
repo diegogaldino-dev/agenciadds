@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import useGoogleAnalytics from "../useGoogleAnalytics";
 
 import { Image, TitleCreate, Text, TextBGColor, TextImportancia, TextBackground, ParagrafoDoTextBackground, DivTextCreater } from "./style";
 import { Button } from "react-bootstrap";
@@ -12,7 +13,9 @@ import { FiCheckCircle } from "react-icons/fi";
 import criacaoImg from "../../img/cropped-view-hands-typing-laptop.jpg";
 
 const Criacao_de_sites = () => {
-  useEffect(() => {
+  useGoogleAnalytics("G-RHJ8R95WMZ");
+
+  useEffect(() => {    
     AOS.init({
       duration: 1000,
       once: true,

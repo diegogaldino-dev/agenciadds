@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import useGoogleAnalytics from "../useGoogleAnalytics";
 import {
   Image,
   TitleMark,
@@ -20,6 +21,7 @@ import Relacionamento from "../../img/icons/relacionamentoeresultado.jpg"
 
 
 const MarketingDigital = () => {
+  useGoogleAnalytics("G-RHJ8R95WMZ");
   useEffect(() => {
     AOS.init({ duration: 800 });
   }, []);
