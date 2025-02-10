@@ -3,21 +3,21 @@ import styled from "styled-components";
 export const ImagemCarrousel = styled.img`
   width: 100%; /* Garante que a imagem ocupe toda a largura do container */
   height: auto; /* Mantém a proporção original da imagem */
-  max-height: 600px; /* Define uma altura máxima para evitar imagens muito grandes */
+  max-height: 600px; /* Altura máxima para desktop */
 
   /* Ajustes para telas médias (tablets) */
   @media (max-width: 768px) {
-    max-height: 400px; /* Reduz a altura máxima em dispositivos menores */
+    max-height: 400px; /* Reduz a altura máxima */
   }
 
   /* Ajustes para telas pequenas (celulares) */
   @media (max-width: 576px) {
-    max-height: 250px; /* Altura ainda menor para dispositivos pequenos */
+    max-height: 550px;
   }
 
   /* Ajustes para telas grandes (desktops grandes) */
   @media (min-width: 1025px) {
-    max-height: 750px; /* Aumenta a altura máxima para telas grandes */
+    max-height: 750px; 
   }
 `;
 
@@ -30,19 +30,19 @@ export const CarouselCaption = styled.div`
     background: linear-gradient(
       rgba(182, 31, 252, 0.5),
       rgba(206, 125, 243, 0.5)
-    ); /* Gradiente de fundo para destacar o texto */
+    );
     border-radius: 15px;
 
     /* Ajustes para telas pequenas (celulares) */
     @media (max-width: 576px) {
-      padding: 10px; /* Reduz o padding para telas menores */
-      text-align: center; /* Alinha o texto no centro em telas pequenas */
+      padding: 10px;
+      text-align: center;
     }
 
     /* Ajustes para telas grandes (desktops grandes) */
     @media (min-width: 1025px) {
-      padding: 40px; /* Aumenta o padding para telas grandes */
-      text-align: left; /* Alinha o texto à esquerda em telas grandes */
+      padding: 40px;
+      text-align: left;
     }
   }
 `;
@@ -55,12 +55,12 @@ export const CarouselTitle = styled.h3`
 
   /* Ajustes para telas pequenas (celulares) */
   @media (max-width: 576px) {
-    font-size: 20px; /* Reduz o tamanho da fonte em telas menores */
+    font-size: 20px;
   }
 
   /* Ajustes para telas grandes (desktops grandes) */
   @media (min-width: 1025px) {
-    font-size: 30px; /* Aumenta o tamanho da fonte para telas grandes */
+    font-size: 30px;
   }
 `;
 
@@ -72,11 +72,11 @@ export const CarouselText = styled.p`
 
   /* Ajustes para telas pequenas (celulares) */
   @media (max-width: 576px) {
-    font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    font-size: 14px;
   }
 
   /* Ajustes para telas grandes (desktops grandes) */
   @media (min-width: 1025px) {
-    font-size: 18px; /* Aumenta o tamanho da fonte para telas grandes */
+    font-size: 18px;
   }
 `;
