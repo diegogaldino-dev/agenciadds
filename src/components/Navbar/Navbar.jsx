@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import {
@@ -12,8 +12,12 @@ import { Link } from "react-router-dom";
 import Logo from "../../img/logo_oficial 1.svg";
 
 const NavBar = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const closeNav = () => setExpanded(false);
+
   return (
-    <StyledNavbar bg="" expand="lg" className="shadow-sm">
+    <StyledNavbar bg="" expand="lg" expanded={expanded} className="shadow-sm">
       <Navbar.Brand href="/">
         <div
           style={{
@@ -27,36 +31,35 @@ const NavBar = () => {
           <TextLogo>DDS - Agencia de Desenvolvimento</TextLogo>
         </div>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle
+        aria-controls="basic-navbar-nav"
+        onClick={() => setExpanded(expanded ? false : true)}
+      />
       <Navbar.Collapse
         id="basic-navbar-nav"
         className="justify-content-center justify-content-lg-end"
       >
         <Nav className="text-center">
-          <Nav.Link as={Link} to="/">
+          <Nav.Link as={Link} to="/" onClick={closeNav}>
             <TextContainer>Inicio</TextContainer>
           </Nav.Link>
-          <Nav.Link as={Link} to="/quem-somos">
+          <Nav.Link as={Link} to="/quem-somos" onClick={closeNav}>
             <TextContainer>Quem Somos</TextContainer>
           </Nav.Link>
-          <Nav.Link as={Link} to="/blog">
+          <Nav.Link as={Link} to="/blog" onClick={closeNav}>
             <TextContainer>Blog</TextContainer>
           </Nav.Link>
-          <Nav.Link as={Link} to="/contato">
+          <Nav.Link as={Link} to="/contato" onClick={closeNav}>
             <TextContainer>Contato</TextContainer>
           </Nav.Link>
           <StyledNavDropdown title="Tipos de Serviços" id="basic-nav-dropdown">
-            <NavDropdown.Item
-              as={Link}
-              alt="Criação de Sites"
-              to="/criacao-de-sites"
-            >
+            <NavDropdown.Item as={Link} to="/criacao-de-sites" onClick={closeNav}>
               Criação de Sites
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/marketing-digital">
+            <NavDropdown.Item as={Link} to="/marketing-digital" onClick={closeNav}>
               Marketing Digital
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/social-media">
+            <NavDropdown.Item as={Link} to="/social-media" onClick={closeNav}>
               Social Media
             </NavDropdown.Item>
           </StyledNavDropdown>
